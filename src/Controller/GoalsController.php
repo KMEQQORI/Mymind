@@ -31,15 +31,19 @@ class GoalsController extends Controller
         $em = $this->getDoctrine()->getRepository(Goal::class);
         $goals = $em->findAll();
 
+
+
         $encoders = array( new JsonEncoder());
         $normalizer = new ObjectNormalizer();
-        $normalizer->setIgnoredAttributes(array('taches','categorie'));
+        $normalizer->setIgnoredAttributes(array('goal','comments','goals'));
         $normalizer->setCircularReferenceLimit(0);
         // Add Circular reference handler
         $normalizer->setCircularReferenceHandler(function ($object) {
             return $object->getId();
         });
         $normalizers = array($normalizer);
+
+
 
 
         $serializer = new Serializer($normalizers, $encoders);
@@ -105,7 +109,7 @@ class GoalsController extends Controller
         $goal = $em->findAllCategorie($id);
 
 
-        $encoders = array( new JsonEncoder());
+        $encoders = array(new JsonEncoder());
         $normalizer = new ObjectNormalizer();
         $normalizer->setIgnoredAttributes(array('categorie'));
         $normalizer->setCircularReferenceLimit(0);
@@ -119,12 +123,14 @@ class GoalsController extends Controller
         $serializer = new Serializer($normalizers, $encoders);
         $json = $serializer->serialize($goal, 'json');
 
-        $response =array(
+        $response = array(
             'code' => 0,
             'message' => 'tache get it',
-            'errors' =>null,
-            'result' =>json_decode($json)
+            'errors' => null,
+            'result' => json_decode($json)
         );
+
+
         return new JsonResponse($response);
     }
 

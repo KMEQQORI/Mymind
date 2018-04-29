@@ -47,10 +47,19 @@ class TacheRepository extends ServiceEntityRepository
             ;
     }
 
-    public function findAllFinishedTache(): array
+    public function findAllDoneTache(): array
     {
         return $this->createQueryBuilder('t')
             ->where('t.Pers_Tache= 100')
+            ->getQuery()
+            ->getResult()
+            ;
+    }
+
+    public function findAllInProgressTache(): array
+    {
+        return $this->createQueryBuilder('t')
+            ->where('t.Pers_Tache= 0')
             ->getQuery()
             ->getResult()
             ;

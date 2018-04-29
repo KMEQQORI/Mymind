@@ -30,6 +30,12 @@ class Goal
     private $Desc_Goal;
 
     /**
+     * @ORM\Column(type="date", nullable=true)
+     */
+    private $CreationDate_Goal;
+
+
+    /**
      * @return mixed
      */
     public function getId()
@@ -78,6 +84,25 @@ class Goal
     }
 
     /**
+     * @return mixed
+     */
+    public function getCreationDateGoal()
+    {
+        if(!is_null($this->CreationDate_Goal))
+            return $this->CreationDate_Goal->format('Y-m-d');
+        else
+            return $this->CreationDate_Goal;
+    }
+
+    /**
+     * @param mixed $CreationDate_Goal
+     */
+    public function setCreationDateGoal($CreationDate_Goal)
+    {
+        $this->CreationDate_Goal = $CreationDate_Goal;
+    }
+
+    /**
      * @ORM\OneToMany(targetEntity="App\Entity\Tache",mappedBy="goal")
      */
     private $taches;
@@ -115,6 +140,41 @@ class Goal
     {
         // TODO: Implement __toString() method.
         return "Goals :".$this->getTitreGoal();
+    }
+
+
+    /**
+     * @JMS\VirtualProperty
+     * @JMS\SerializedName("Statistiques")
+     */
+    public function getStatistiques()
+    {
+        $tasks=$this->getTaches();
+        $totalScore=0;
+        $gainedScore=0;
+        $finished=0;
+        $unFinished=0;
+        $totalCount=0;
+
+        foreach ($tasks as $task){
+            //commandes
+            $totalScore+=$task->getValueTache();
+            $gainedScore+=$task->getValueTache()*$task->getPersTache()/100;
+            $finished+=($task->getPersTache()==100);
+            $unFinished+=($task->getPersTache()==0);
+            $totalCount++;
+        }
+
+        $statistiques=[
+            "totalScore" => $totalScore,
+            "gainedScore" => $gainedScore,
+            "percentage" => floor (($gainedScore/$totalScore)*100),
+            "finished" => $finished,
+            "unFinished" => $unFinished,
+            "totalCount" => $totalCount
+        ];
+
+        return $statistiques;
     }
 
 

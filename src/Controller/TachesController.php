@@ -84,19 +84,56 @@ class TachesController extends Controller
     }
 
     /**
-     * @Route("/Taches/Finished",name="AllFinishedTaches")
+     * @Route("/Taches/Done",name="AllDoneTaches")
      */
 
-    public function showAllFinishedTaches()
+    public function showAllDoneTaches()
     {
         $em = $this->getDoctrine()->getRepository(Tache::class);
-        $tache = $em->findAllFinishedTache();
+        $tache = $em->findAllDoneTache();
         ;
 
         $encoders = array( new JsonEncoder());
         $normalizer = new ObjectNormalizer();
-        $normalizer->setIgnoredAttributes(array('goal'));
-        $normalizer->setCircularReferenceLimit(0);
+        $normalizer->setIgnoredAttributes(array('taches',''));
+        $normalizer->setCircularReferenceLimit(-1);
+        // Add Circular reference handler
+        $normalizer->setCircularReferenceHandler(function ($object) {
+            return $object->getId();
+        });
+        $normalizers = array($normalizer);
+
+
+        $serializer = new Serializer($normalizers, $encoders);
+        $json = $serializer->serialize($tache, 'json');
+
+        $response =array(
+            'code' => 0,
+            'message' => 'tache get it',
+            'errors' =>null,
+            'result' =>json_decode($json)
+        );
+
+        return new JsonResponse($response);
+    }
+
+
+
+
+
+    /**
+     * @Route("/Taches/InProgress",name="AllInProgressTaches")
+     */
+
+    public function showAllInProgressTaches()
+    {
+        $em = $this->getDoctrine()->getRepository(Tache::class);
+        $tache = $em->findAllInProgressTache();
+
+        $encoders = array( new JsonEncoder());
+        $normalizer = new ObjectNormalizer();
+        $normalizer->setIgnoredAttributes(array('taches','goals'));
+        $normalizer->setCircularReferenceLimit(-1);
         // Add Circular reference handler
         $normalizer->setCircularReferenceHandler(function ($object) {
             return $object->getId();
@@ -153,6 +190,60 @@ class TachesController extends Controller
 
 
     /**
+     * @Route("/Tache/Done/{id}",name="DoneTache")
+     */
+
+    public function doneTache($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $tache = $em->getRepository(Tache::class)->find($id);
+        $tache->setPersTache(100);
+
+        // tell Doctrine you want to (eventually) save the Product (no queries yet)
+        $em->persist($tache);
+
+        // actually executes the queries (i.e. the INSERT query)
+        $em->flush();
+
+
+        return new  JsonResponse( array(
+            'code' => 0,
+            'message' => 'tache fini avec success',
+            'errors' =>null,
+            'result' => 'tache fini'
+        ));
+    }
+
+
+    /**
+     * @Route("/Tache/UnDone/{id}",name="UnDoneTache")
+     */
+
+    public function unDoneTache($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $tache = $em->getRepository(Tache::class)->find($id);
+        $tache->setPersTache(0);
+
+        // tell Doctrine you want to (eventually) save the Product (no queries yet)
+        $em->persist($tache);
+
+        // actually executes the queries (i.e. the INSERT query)
+        $em->flush();
+
+
+        return new  JsonResponse( array(
+            'code' => 0,
+            'message' => 'tache fini avec success',
+            'errors' =>null,
+            'result' => 'tache reOpen'
+        ));
+    }
+
+
+    /**
      * @Route("/Taches/Goal/{id}",name="TachesOfGOal")
      */
 
@@ -190,8 +281,7 @@ class TachesController extends Controller
      * @Route("/Taches/Categorie/{id}",name="TachesOfCategorie")
      */
 
-
-    public function showTachesOfCategorie($id)
+  public function showTachesOfCategorie($id)
     {
         $em = $this->getDoctrine()->getRepository(Tache::class);
         $tache = $em->findAllCategorie($id);
@@ -231,12 +321,14 @@ class TachesController extends Controller
         $tache= new Tache();
         $tache->setTitreTache($_POST['titreTache']);
         $tache->setDescTache($_POST['descTache']);
-        $tache->setPersTache($_POST['persTache']);
+        $tache->setPersTache(0);
+        $tache->setCreationDateTache( new \DateTime($_POST['dateCreation']));
+        $tache->setDeadLineTache(new \DateTime($_POST['deadLine']));
         $tache->setValueTache($_POST['valueTache']);
 
 
 
-        $goal=$this->getDoctrine()->getRepository(Goal::class)->find(1);
+        $goal=$this->getDoctrine()->getRepository(Goal::class)->find($_POST['idGoal']);
 
         $tache->setGoal($goal);
 
@@ -245,6 +337,15 @@ class TachesController extends Controller
 
         // actually executes the queries (i.e. the INSERT query)
         $em->flush();
+
+
+        $response =array(
+            'code' => 0,
+            'message' => 'tache cree',
+            'errors' =>null,
+            'result' =>"Task Created"
+        );
+        return new JsonResponse($response);
 
 
     }

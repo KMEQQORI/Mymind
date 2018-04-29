@@ -1,0 +1,61 @@
+
+
+<ul class="doneTimeline">
+  {{#result}}  
+  <li class="event" data-date='{{creationDateTache}} - {{deadLineTache}} (4 days left)'>
+    <div class="TaskCard">
+      <div class="row">
+         <div class="col-md-10">
+             <h1>{{titreTache}}</h1>
+         </div>
+         <div class="col-md-2">
+             <h1 class="doneTaskScore">{{valueTache}}</h1>
+         </div>
+      </div>
+     
+      <div class="row">
+        <div class="col-md-12">
+          <h3>{{goal.titreGoal}}<span class="badge  badge-dark">{{goal.categorie.titreCategorie}}</span></h3>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12">
+          <p>{{descTache}}</p>  
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="list-group list-group-flush ">
+              {{#comments}}
+                <li class="list-group-item comments">
+                  <p class="commentDate">{{creationDateComment}}</p>
+                  <p class="commentBody">{{commentText}}<p>
+                </li>
+              {{/comments}}
+              </ul>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-12">
+            <div class="btn-group float-right" role="group" aria-label="Basic example">
+                <button class="btn btn-outline-danger" type="button" onclick="myFunction()">Archive</button>
+                <button class="btn btn-outline-info" type="button" onclick="unDoneTask({{id}});">UnDone</button>
+            </div>
+          </div>
+      </div>
+
+
+
+    </div>
+  </li>
+  {{/result}}
+</ul>

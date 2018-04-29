@@ -3,7 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
+use Doctrine\Common\Collections\ArrayCollection;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\TacheRepository")
  */
@@ -36,6 +36,18 @@ class Tache
      */
     private $Desc_Tache;
 
+
+    /**
+     * @ORM\Column(type="date", nullable=true)
+     */
+    private $CreationDate_Tache;
+
+
+    /**
+     * @ORM\Column(type="date", nullable=true)
+     */
+    private $DeadLine_Tache;
+
     /**
      * @return mixed
      */
@@ -67,6 +79,47 @@ class Tache
     {
         $this->Titre_Tache = $Titre_Tache;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getCreationDateTache()
+    {
+        if(!is_null($this->CreationDate_Tache))
+            return $this->CreationDate_Tache->format('Y-m-d');
+        else
+            return $this->CreationDate_Tache;
+    }
+
+    /**
+     * @param mixed $CreationDate_Tache
+     */
+    public function setCreationDateTache($CreationDate_Tache)
+    {
+        $this->CreationDate_Tache = $CreationDate_Tache;
+    }
+
+
+    /**
+     * @return mixed
+     */
+    public function getDeadLineTache()
+    {
+        if(!is_null($this->DeadLine_Tache))
+             return $this->DeadLine_Tache->format('Y-m-d');
+        else
+            return $this->DeadLine_Tache;
+    }
+
+    /**
+     * @param mixed $DeadLine_Tache
+     */
+    public function setDeadLineTache($DeadLine_Tache)
+    {
+        $this->DeadLine_Tache = $DeadLine_Tache;
+    }
+
+
 
     /**
      * @return mixed
@@ -131,6 +184,25 @@ class Tache
     public function setGoal(Goal $goal)
     {
         $this->goal=$goal;
+    }
+
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Comment",mappedBy="tache")
+     */
+    private $comments;
+
+    public function __construct()
+    {
+        $this->comments=new ArrayCollection();
+    }
+
+    /**
+     * @return Collection|Comment[]
+     */
+    public function getComments()
+    {
+        return $this->comments;
     }
 
 

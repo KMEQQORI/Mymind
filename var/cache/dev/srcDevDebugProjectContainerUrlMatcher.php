@@ -53,25 +53,17 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
         }
 
-        elseif (0 === strpos($pathinfo, '/Goal')) {
-            // AllGoals
-            if ('/Goals' === $pathinfo) {
-                return array (  '_controller' => 'App\\Controller\\GoalsController::showAllGoals',  '_route' => 'AllGoals',);
-            }
-
-            // AllGoal
-            if (preg_match('#^/Goal/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'AllGoal')), array (  '_controller' => 'App\\Controller\\GoalsController::showGoal',));
-            }
-
-            // GoalsOfCategorie
-            if (0 === strpos($pathinfo, '/Goals/Categorie') && preg_match('#^/Goals/Categorie/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'GoalsOfCategorie')), array (  '_controller' => 'App\\Controller\\GoalsController::showGoalsOfCategorie',));
-            }
-
+        // comments
+        if ('/comments' === $pathinfo) {
+            return array (  '_controller' => 'App\\Controller\\CommentsController::index',  '_route' => 'comments',);
         }
 
-        elseif (0 === strpos($pathinfo, '/Tache')) {
+        if (0 === strpos($pathinfo, '/Tache')) {
+            // CommentTache
+            if (preg_match('#^/Tache/(?P<id>[^/]++)/Comment/(?P<commentaire>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'CommentTache')), array (  '_controller' => 'App\\Controller\\CommentsController::commentTache',));
+            }
+
             if (0 === strpos($pathinfo, '/Taches')) {
                 // GenTaches
                 if ('/Taches/Generate' === $pathinfo) {
@@ -83,9 +75,14 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                     return array (  '_controller' => 'App\\Controller\\TachesController::showAllTaches',  '_route' => 'AllTaches',);
                 }
 
-                // AllFinishedTaches
-                if ('/Taches/Finished' === $pathinfo) {
-                    return array (  '_controller' => 'App\\Controller\\TachesController::showAllFinishedTaches',  '_route' => 'AllFinishedTaches',);
+                // AllDoneTaches
+                if ('/Taches/Done' === $pathinfo) {
+                    return array (  '_controller' => 'App\\Controller\\TachesController::showAllDoneTaches',  '_route' => 'AllDoneTaches',);
+                }
+
+                // AllInProgressTaches
+                if ('/Taches/InProgress' === $pathinfo) {
+                    return array (  '_controller' => 'App\\Controller\\TachesController::showAllInProgressTaches',  '_route' => 'AllInProgressTaches',);
                 }
 
             }
@@ -93,6 +90,16 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             // ShowTache
             if (preg_match('#^/Tache/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'ShowTache')), array (  '_controller' => 'App\\Controller\\TachesController::showTache',));
+            }
+
+            // DoneTache
+            if (0 === strpos($pathinfo, '/Tache/Done') && preg_match('#^/Tache/Done/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'DoneTache')), array (  '_controller' => 'App\\Controller\\TachesController::doneTache',));
+            }
+
+            // UnDoneTache
+            if (0 === strpos($pathinfo, '/Tache/UnDone') && preg_match('#^/Tache/UnDone/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'UnDoneTache')), array (  '_controller' => 'App\\Controller\\TachesController::unDoneTache',));
             }
 
             if (0 === strpos($pathinfo, '/Taches')) {
@@ -117,6 +124,24 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 }
                 not_app_taches_addnewtache:
 
+            }
+
+        }
+
+        elseif (0 === strpos($pathinfo, '/Goal')) {
+            // AllGoals
+            if ('/Goals' === $pathinfo) {
+                return array (  '_controller' => 'App\\Controller\\GoalsController::showAllGoals',  '_route' => 'AllGoals',);
+            }
+
+            // AllGoal
+            if (preg_match('#^/Goal/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'AllGoal')), array (  '_controller' => 'App\\Controller\\GoalsController::showGoal',));
+            }
+
+            // GoalsOfCategorie
+            if (0 === strpos($pathinfo, '/Goals/Categorie') && preg_match('#^/Goals/Categorie/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'GoalsOfCategorie')), array (  '_controller' => 'App\\Controller\\GoalsController::showGoalsOfCategorie',));
             }
 
         }

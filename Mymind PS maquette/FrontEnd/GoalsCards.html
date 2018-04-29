@@ -1,0 +1,67 @@
+      {{#result}} 
+        <div class="row">  
+         <div class="inProgressHeader">
+           <div class="row">
+             <div class="col-4">
+               <h1 class="InProgresseHeaderTitle">{{titreGoal}}</h1>
+               <h2 class="InProgresseHeaderSubTitle">Categorie Title :</h1>
+               <h2 class="InProgresseHeaderSubTitle">{{creationDateGoal}}</h1>
+             </div>
+             <div class="col-4">
+               <h1 class="InProgresseHeaderScore">
+                   Gained Score :
+                   <span class="badge badge-success">
+                   {{statistiques.gainedScore}}
+                 </span> /
+                 Total Score :
+                 <span class="badge badge-secondary">
+                   {{statistiques.totalScore}}
+                 </span>
+               </h1>
+                 <h1 class="InProgresseHeaderScore">
+                     {{statistiques.finished}} Finish / {{statistiques.unFinished}} In Progress
+                     <span class="badge badge-info" >
+                        {{statistiques.percentage}}%
+                    </span>
+                 </h1>
+
+               <h1 class="InProgresseHeaderCount" style="text-align:center;">{{statistiques.totalCount}} Task</h1>
+             </div>
+             <div class="col-4">
+                <h2 class="InProgresseHeaderSubTitle">{{descGoal}}</h1>
+             </div>
+           </div>
+           
+
+            </div>
+        </div>
+        
+            <section id="pinBoot" class="timeline pinboot">
+                    
+              {{#taches}}   
+              <article class="white-panel"  style="background-color:transparent" id="{{id}}">
+                <div class="percentage{{persTache}}">
+                  <div class="row">
+                     <div class="col-md-10">
+                         <h1>{{titreTache}}</h1>
+                     </div>
+                     <div class="col-md-2">
+                         <h1 class="TaskScore">{{valueTache}}</h1>
+                     </div>
+                  </div>
+ 
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p>{{descTache}}</p>  
+                    </div>
+                  </div>   
+                </div>
+              </article>  
+               {{/taches}} 
+                          
+            </section>
+
+
+            <br>
+        </div>
+     {{/result}} 

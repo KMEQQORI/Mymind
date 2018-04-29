@@ -1,0 +1,130 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/card.css"/>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/flipclock.css">
+  <link rel="stylesheet" type="text/css" href="css/tempusdominus-bootstrap-4.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-datepicker3.css"/>
+  <link rel="stylesheet" href="/myMind/public/assets/theme.css">
+</head>
+
+<body>
+<div class="LoadingGlass">
+  <div class="loader"></div> 
+</div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-8">
+        <div class="row">
+          <div class="addNewGoalHeader">
+            <div class="row">
+              <div class="col-3">
+                <h1 class="InProgresseHeaderTitle">new Goal:</h1>
+              </div>
+              <div class="col-7">
+                <div class="alert alert-secondary" role="alert" id="creationSuccessAlert" style="display:none;">
+                  Your Goal have been successfully created!
+                </div>
+              </div>
+              <div class="col-2">
+                <button type="button" class="btn btn-outline-warning float-right" onclick="addGoal()">Create</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <div class="input-group">
+                  <input class="form-control commentInput" type="text" placeholder="Give a title to your Goal .." id="titreGoal"> 
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                  <select class="form-control commentInput" id="idCategorie">
+                        <option value="0">Default Categorie</option>
+                  </select>
+                </div>
+              </div> 
+                
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <div class="form-group">
+                  <textarea class="form-control commentInput" id="descGoal" rows="3" >Add a description to your Goal</textarea>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="form-group">
+                 <input class="form-control commentInput" id="dateCreation" name="date" placeholder="Creation Date" type="text"/>
+                </div>
+              </div> 
+                
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-4 ">
+        <div class="row">
+          <div class="input-group rechercheDiv">
+            <input type="text" class="form-control rechercheInput" placeholder="Recherche ..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-warning" type="button">Recherche</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="btn-group menuButtonGroup" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary menuButton">Home</button>
+            <button type="button" class="btn btn-secondary menuButton" onclick="window.location.href='index.html'">Tasks</button>
+            <button type="button" class="btn btn-secondary menuButton" onclick="window.location.href='goals.html'">Goals</button>
+            <button type="button" class="btn btn-secondary menuButton">Categories</button>
+            <button type="button" class="btn btn-secondary menuButton">Logout</button>
+          </div>
+        </div>
+        
+        <div class="row clockBackground">
+          <div class="col-12">
+              <div class="clock center-block" style="margin:3px auto;"> </div>
+          </div>     
+        </div>
+
+      </div>
+    </div>
+
+
+  
+      
+
+    <div id="inProgressList" >
+
+    </div>
+
+     
+
+  </div>
+
+
+
+
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/moment.min.js"></script>
+  <script type="text/javascript" src="js/tempusdominus-bootstrap-4.min.js"></script>
+  <script type="text/javascript" src="js/flipclock.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+  <script type="text/javascript" src="js/mustache.js"></script>
+  <script type="text/javascript" src="js/goals.js"></script>
+  <script src="/myMind/public/assets/theme.js"></script>
+
+
+
+  
+</body>
+
+</html>
+
