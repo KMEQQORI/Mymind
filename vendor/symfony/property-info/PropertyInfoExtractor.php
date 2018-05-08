@@ -16,7 +16,7 @@ namespace Symfony\Component\PropertyInfo;
  *
  * @author Kévin Dunglas <dunglas@gmail.com>
  *
- * @final since version 3.3
+ * @final
  */
 class PropertyInfoExtractor implements PropertyInfoExtractorInterface
 {
@@ -95,7 +95,7 @@ class PropertyInfoExtractor implements PropertyInfoExtractorInterface
     private function extract(iterable $extractors, string $method, array $arguments)
     {
         foreach ($extractors as $extractor) {
-            $value = call_user_func_array(array($extractor, $method), $arguments);
+            $value = \call_user_func_array(array($extractor, $method), $arguments);
             if (null !== $value) {
                 return $value;
             }

@@ -49,7 +49,7 @@ h1 {
 }
 .timeline .event {
   border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
-  padding-bottom: 25px;
+  padding-bottom: 0px;
   margin-bottom: 50px;
   position: relative;
 }
@@ -83,3 +83,4 @@ h1 {
   content: "";
   top: 5px;
 }
+

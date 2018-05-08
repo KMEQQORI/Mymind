@@ -81,7 +81,7 @@ class Categorie
 
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Goal",mappedBy="categorie")
+     * @ORM\OneToMany(targetEntity="App\Entity\Goal",mappedBy="categorie", fetch="EAGER")
      */
     private $goals;
     public function __construct()

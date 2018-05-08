@@ -17,11 +17,8 @@ use Composer\DependencyResolver\Operation\OperationInterface;
 use Composer\DependencyResolver\Operation\UpdateOperation;
 use Composer\DependencyResolver\Operation\UninstallOperation;
 use Composer\Downloader\TransportException;
-use Composer\Factory;
 use Composer\IO\IOInterface;
 use Composer\Json\JsonFile;
-use Composer\Plugin\PluginEvents;
-use Composer\Plugin\PreFileDownloadEvent;
 
 /**
  * @author Fabien Potencier <fabien@symfony.com>
@@ -39,7 +36,6 @@ class Downloader
     private $endpoint;
     private $caFile;
     private $flexId;
-    private $eventDispatcher;
 
     public function __construct(Composer $composer, IoInterface $io, ParallelDownloader $rfs)
     {
@@ -54,7 +50,6 @@ class Downloader
         $this->endpoint = rtrim($endpoint, '/');
         $this->io = $io;
         $config = $composer->getConfig();
-        $this->eventDispatcher = $composer->getEventDispatcher();
         $this->rfs = $rfs;
         $this->cache = new Cache($io, $config->get('cache-repo-dir').'/'.preg_replace('{[^a-z0-9.]}i', '-', $this->endpoint));
         $this->sess = bin2hex(random_bytes(16));

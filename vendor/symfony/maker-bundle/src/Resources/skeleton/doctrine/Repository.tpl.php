@@ -1,27 +1,49 @@
-<?= "<?php\n" ?>
+<?= "<?php\n"; ?>
 
-namespace App\Repository;
+namespace <?= $namespace; ?>;
 
-use App\Entity\<?= $entity_class_name ?>;
+use <?= $entity_full_class_name; ?>;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 
-class <?= $repository_class_name ?> extends ServiceEntityRepository
+/**
+ * @method <?= $entity_class_name; ?>|null find($id, $lockMode = null, $lockVersion = null)
+ * @method <?= $entity_class_name; ?>|null findOneBy(array $criteria, array $orderBy = null)
+ * @method <?= $entity_class_name; ?>[]    findAll()
+ * @method <?= $entity_class_name; ?>[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ */
+class <?= $class_name; ?> extends ServiceEntityRepository
 {
     public function __construct(RegistryInterface $registry)
     {
-        parent::__construct($registry, <?= $entity_class_name ?>::class);
+        parent::__construct($registry, <?= $entity_class_name; ?>::class);
     }
 
+//    /**
+//     * @return <?= $entity_class_name ?>[] Returns an array of <?= $entity_class_name ?> objects
+//     */
     /*
-    public function findBySomething($value)
+    public function findByExampleField($value)
     {
-        return $this->createQueryBuilder('<?= $entity_alias ?>')
-            ->where('<?= $entity_alias ?>.something = :value')->setParameter('value', $value)
-            ->orderBy('<?= $entity_alias ?>.id', 'ASC')
+        return $this->createQueryBuilder('<?= $entity_alias; ?>')
+            ->andWhere('<?= $entity_alias; ?>.exampleField = :val')
+            ->setParameter('val', $value)
+            ->orderBy('<?= $entity_alias; ?>.id', 'ASC')
             ->setMaxResults(10)
             ->getQuery()
             ->getResult()
+        ;
+    }
+    */
+
+    /*
+    public function findOneBySomeField($value): ?<?= $entity_class_name."\n" ?>
+    {
+        return $this->createQueryBuilder('<?= $entity_alias ?>')
+            ->andWhere('<?= $entity_alias ?>.exampleField = :val')
+            ->setParameter('val', $value)
+            ->getQuery()
+            ->getOneOrNullResult()
         ;
     }
     */

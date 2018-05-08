@@ -161,9 +161,11 @@ class TachesController extends Controller
 
     public function showTache($id)
     {
-        $em = $this->getDoctrine()->getRepository(Tache::class);
-        $tache = $em->find($id);
 
+        $em = $this->getDoctrine()->getRepository(Tache::class);
+        //$tache = $em->find($id);
+
+        /*
         $encoders = array( new JsonEncoder());
         $normalizer = new ObjectNormalizer();
         $normalizer->setIgnoredAttributes(array('goal'));
@@ -177,12 +179,13 @@ class TachesController extends Controller
 
         $serializer = new Serializer($normalizers, $encoders);
         $json = $serializer->serialize($tache, 'json');
+        */
 
         $response =array(
             'code' => 0,
             'message' => 'tache get it',
             'errors' =>null,
-            'result' =>json_decode($json)
+            'result' => 'yep'
         );
 
         return new JsonResponse($response);
@@ -214,6 +217,34 @@ class TachesController extends Controller
             'result' => 'tache fini'
         ));
     }
+
+
+    /**
+     * @Route("/Tache/Cancel/{id}",name="CancelTache")
+     */
+
+    public function CancelTache($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $tache = $em->getRepository(Tache::class)->find($id);
+        $tache->setPersTache(-100);
+
+        // tell Doctrine you want to (eventually) save the Product (no queries yet)
+        $em->persist($tache);
+
+        // actually executes the queries (i.e. the INSERT query)
+        $em->flush();
+
+
+        return new  JsonResponse( array(
+            'code' => 0,
+            'message' => 'tache fini avec success',
+            'errors' =>null,
+            'result' => 'tache fini'
+        ));
+    }
+
 
 
     /**
@@ -344,6 +375,36 @@ class TachesController extends Controller
             'message' => 'tache cree',
             'errors' =>null,
             'result' =>"Task Created"
+        );
+        return new JsonResponse($response);
+
+
+    }
+
+
+
+    /**
+     * @Route("/Taches/Delete/{id}", methods="GET")
+     */
+
+    public function DeleteTache($id)
+    {
+
+        $em = $this->getDoctrine()->getManager();
+        $tache = $this->getDoctrine()->getRepository(Tache::class)->find($id);
+
+        // tell Doctrine you want to (eventually) save the Product (no queries yet)
+        $em->remove($tache);
+
+        // actually executes the queries (i.e. the INSERT query)
+        $em->flush();
+
+
+        $response =array(
+            'code' => 0,
+            'message' => 'tache cree',
+            'errors' =>null,
+            'result' =>"Task Deleted"
         );
         return new JsonResponse($response);
 

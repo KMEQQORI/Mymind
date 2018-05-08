@@ -26,7 +26,7 @@ $(document).ready(function() {
 
 
  */
-;(function ($, window, document, undefined) {
+(function ($, window, document, undefined) {
     var pluginName = 'pinterest_grid',
         defaults = {
             padding_x: 10,

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Symfony package.
+ * This file is part of the Symfony MakerBundle package.
  *
  * (c) Fabien Potencier <fabien@symfony.com>
  *
@@ -10,6 +10,9 @@
  */
 
 namespace Symfony\Bundle\MakerBundle;
+
+use Symfony\Component\DependencyInjection\Container;
+use Doctrine\Common\Inflector\Inflector;
 
 /**
  * @author Javier Eguiluz <javier.eguiluz@gmail.com>
@@ -77,12 +80,27 @@ final class Str
         return $value;
     }
 
+    public static function asLowerCamelCase(string $str): string
+    {
+        return lcfirst(self::asCamelCase($str));
+    }
+
+    public static function asCamelCase(string $str): string
+    {
+        return strtr(ucwords(strtr($str, ['_' => ' ', '.' => ' ', '\\' => ' '])), [' ' => '']);
+    }
+
     public static function asRoutePath(string $value): string
     {
         return '/'.str_replace('_', '/', self::asTwigVariable($value));
     }
 
     public static function asRouteName(string $value): string
+    {
+        return self::asTwigVariable($value);
+    }
+
+    public static function asSnakeCase(string $value): string
     {
         return self::asTwigVariable($value);
     }
@@ -95,6 +113,48 @@ final class Str
     public static function asEventMethod(string $eventName): string
     {
         return sprintf('on%s', self::asClassName($eventName));
+    }
+
+    public static function getShortClassName(string $fullClassName): string
+    {
+        if (!empty(self::getNamespace($fullClassName))) {
+            return substr($fullClassName, strrpos($fullClassName, '\\') + 1);
+        } else {
+            return $fullClassName;
+        }
+    }
+
+    public static function getNamespace(string $fullClassName): string
+    {
+        return substr($fullClassName, 0, strrpos($fullClassName, '\\'));
+    }
+
+    public static function asFilePath(string $value): string
+    {
+        $value = Container::underscore(trim($value));
+        $value = str_replace('\\', '/', $value);
+
+        return $value;
+    }
+
+    public static function singularCamelCaseToPluralCamelCase(string $camelCase): string
+    {
+        $snake = self::asSnakeCase($camelCase);
+        $words = explode('_', $snake);
+        $words[count($words) - 1] = Inflector::pluralize($words[count($words) - 1]);
+        $reSnaked = implode('_', $words);
+
+        return self::asLowerCamelCase($reSnaked);
+    }
+
+    public static function pluralCamelCaseToSingular(string $camelCase): string
+    {
+        $snake = self::asSnakeCase($camelCase);
+        $words = explode('_', $snake);
+        $words[count($words) - 1] = Inflector::singularize($words[count($words) - 1]);
+        $reSnaked = implode('_', $words);
+
+        return self::asLowerCamelCase($reSnaked);
     }
 
     public static function getRandomTerm(): string
@@ -121,5 +181,28 @@ final class Str
         ];
 
         return sprintf('%s %s', $adjectives[array_rand($adjectives)], $nouns[array_rand($nouns)]);
+    }
+
+    /**
+     * Checks if the given name is a valid PHP variable name.
+     *
+     * @see http://php.net/manual/en/language.variables.basics.php
+     *
+     * @param $name string
+     *
+     * @return bool
+     */
+    public static function isValidPhpVariableName($name)
+    {
+        return (bool) preg_match('/^[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*$/', $name, $matches);
+    }
+
+    public static function areClassesAlphabetical(string $class1, string $class2)
+    {
+        $arr1 = [$class1, $class2];
+        $arr2 = [$class1, $class2];
+        sort($arr2);
+
+        return $arr1[0] == $arr2[0];
     }
 }

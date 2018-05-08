@@ -123,6 +123,20 @@ class ContainerBuilder extends Container implements TaggedContainerInterface
     private $removedIds = array();
     private $alreadyLoading = array();
 
+    private static $internalTypes = array(
+        'int' => true,
+        'float' => true,
+        'string' => true,
+        'bool' => true,
+        'resource' => true,
+        'object' => true,
+        'array' => true,
+        'null' => true,
+        'callable' => true,
+        'iterable' => true,
+        'mixed' => true,
+    );
+
     public function __construct(ParameterBagInterface $parameterBag = null)
     {
         parent::__construct($parameterBag);
@@ -321,14 +335,21 @@ class ContainerBuilder extends Container implements TaggedContainerInterface
         if (!$class = $this->getParameterBag()->resolveValue($class)) {
             return null;
         }
+
+        if (isset(self::$internalTypes[$class])) {
+            return null;
+        }
+
         $resource = null;
 
         try {
             if (isset($this->classReflectors[$class])) {
                 $classReflector = $this->classReflectors[$class];
-            } else {
+            } elseif ($this->trackResources) {
                 $resource = new ClassExistenceResource($class, false);
                 $classReflector = $resource->isFresh(0) ? false : new \ReflectionClass($class);
+            } else {
+                $classReflector = new \ReflectionClass($class);
             }
         } catch (\ReflectionException $e) {
             if ($throw) {
@@ -592,7 +613,7 @@ class ContainerBuilder extends Container implements TaggedContainerInterface
      *
      * @throws BadMethodCallException When this ContainerBuilder is compiled
      */
-    public function merge(ContainerBuilder $container)
+    public function merge(self $container)
     {
         if ($this->isCompiled()) {
             throw new BadMethodCallException('Cannot merge on a compiled container.');
@@ -1324,16 +1345,16 @@ class ContainerBuilder extends Container implements TaggedContainerInterface
             $value = $bag->resolveValue($value);
         }
 
-        if (is_array($value)) {
+        if (\is_array($value)) {
             $result = array();
             foreach ($value as $k => $v) {
-                $result[$this->resolveEnvPlaceholders($k, $format, $usedEnvs)] = $this->resolveEnvPlaceholders($v, $format, $usedEnvs);
+                $result[\is_string($k) ? $this->resolveEnvPlaceholders($k, $format, $usedEnvs) : $k] = $this->resolveEnvPlaceholders($v, $format, $usedEnvs);
             }
 
             return $result;
         }
 
-        if (!is_string($value)) {
+        if (!\is_string($value) || 38 > \strlen($value)) {
             return $value;
         }
         $envPlaceholders = $bag instanceof EnvPlaceholderParameterBag ? $bag->getEnvPlaceholders() : $this->envPlaceholders;
@@ -1397,7 +1418,7 @@ class ContainerBuilder extends Container implements TaggedContainerInterface
      *
      * @return array An array of Service conditionals
      *
-     * @internal since version 3.4
+     * @internal
      */
     public static function getServiceConditionals($value)
     {

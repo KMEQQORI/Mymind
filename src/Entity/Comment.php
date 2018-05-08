@@ -70,7 +70,7 @@ class Comment
 
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Tache",inversedBy="comments")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Tache",inversedBy="comments",cascade={"remove"}, fetch="EAGER")
      * @ORM\JoinColumn(nullable=true)
      */
     private $tache;

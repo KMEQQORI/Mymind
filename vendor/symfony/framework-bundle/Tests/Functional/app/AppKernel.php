@@ -17,7 +17,6 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpKernel\Kernel;
 
-
 /**
  * App Test Kernel for functional tests.
  *

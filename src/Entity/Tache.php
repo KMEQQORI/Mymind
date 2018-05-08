@@ -171,7 +171,7 @@ class Tache
 
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Goal",inversedBy="taches")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Goal",inversedBy="taches", fetch="EAGER")
      * @ORM\JoinColumn(nullable=true)
      */
     private $goal;
@@ -188,7 +188,7 @@ class Tache
 
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Comment",mappedBy="tache")
+     * @ORM\OneToMany(targetEntity="App\Entity\Comment",mappedBy="tache",cascade={"remove"}, fetch="EAGER")
      */
     private $comments;
 

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Symfony package.
+ * This file is part of the Symfony MakerBundle package.
  *
  * (c) Fabien Potencier <fabien@symfony.com>
  *
@@ -11,15 +11,18 @@
 
 namespace Symfony\Bundle\MakerBundle\Maker;
 
+use Doctrine\Bundle\DoctrineBundle\DoctrineBundle;
 use Symfony\Bundle\MakerBundle\ConsoleStyle;
 use Symfony\Bundle\MakerBundle\DependencyBuilder;
+use Symfony\Bundle\MakerBundle\Doctrine\DoctrineHelper;
+use Symfony\Bundle\MakerBundle\Generator;
 use Symfony\Bundle\MakerBundle\InputConfiguration;
-use Symfony\Bundle\MakerBundle\MakerInterface;
 use Symfony\Bundle\MakerBundle\Str;
 use Symfony\Bundle\MakerBundle\Validator;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Question\Question;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Validator\Validation;
 
@@ -27,8 +30,15 @@ use Symfony\Component\Validator\Validation;
  * @author Javier Eguiluz <javier.eguiluz@gmail.com>
  * @author Ryan Weaver <weaverryan@gmail.com>
  */
-final class MakeForm implements MakerInterface
+final class MakeForm extends AbstractMaker
 {
+    private $entityHelper;
+
+    public function __construct(DoctrineHelper $entityHelper)
+    {
+        $this->entityHelper = $entityHelper;
+    }
+
     public static function getCommandName(): string
     {
         return 'make:form';
@@ -39,35 +49,70 @@ final class MakeForm implements MakerInterface
         $command
             ->setDescription('Creates a new form class')
             ->addArgument('name', InputArgument::OPTIONAL, sprintf('The name of the form class (e.g. <fg=yellow>%sType</>)', Str::asClassName(Str::getRandomTerm())))
+            ->addArgument('bound-class', InputArgument::OPTIONAL, 'The name of Entity or custom model class that the new form will be bound to (empty for none)')
             ->setHelp(file_get_contents(__DIR__.'/../Resources/help/MakeForm.txt'))
         ;
+
+        $inputConf->setArgumentAsNonInteractive('bound-class');
     }
 
     public function interact(InputInterface $input, ConsoleStyle $io, Command $command)
     {
+        if (null === $input->getArgument('bound-class')) {
+            $argument = $command->getDefinition()->getArgument('bound-class');
+
+            $entities = $this->entityHelper->getEntitiesForAutocomplete();
+
+            $question = new Question($argument->getDescription());
+            $question->setValidator(function ($answer) use ($entities) {return Validator::existsOrNull($answer, $entities); });
+            $question->setAutocompleterValues($entities);
+            $question->setMaxAttempts(3);
+
+            $input->setArgument('bound-class', $io->askQuestion($question));
+        }
     }
 
-    public function getParameters(InputInterface $input): array
+    public function generate(InputInterface $input, ConsoleStyle $io, Generator $generator)
     {
-        $formClassName = Str::asClassName($input->getArgument('name'), 'Type');
-        Validator::validateClassName($formClassName);
-        $entityClassName = Str::removeSuffix($formClassName, 'Type');
+        $formClassNameDetails = $generator->createClassNameDetails(
+            $input->getArgument('name'),
+            'Form\\',
+            'Type'
+        );
 
-        return [
-            'form_class_name' => $formClassName,
-            'entity_class_name' => $entityClassName,
-        ];
-    }
+        $formFields = ['field_name'];
+        $boundClassVars = [];
 
-    public function getFiles(array $params): array
-    {
-        return [
-            __DIR__.'/../Resources/skeleton/form/Type.tpl.php' => 'src/Form/'.$params['form_class_name'].'.php',
-        ];
-    }
+        $boundClass = $input->getArgument('bound-class');
 
-    public function writeNextStepsMessage(array $params, ConsoleStyle $io)
-    {
+        if (null !== $boundClass) {
+            $boundClassDetails = $generator->createClassNameDetails(
+                $boundClass,
+                'Entity\\'
+            );
+
+            $doctrineEntityDetails = $this->entityHelper->createDoctrineDetails($boundClassDetails->getFullName());
+
+            if (null !== $doctrineEntityDetails) {
+                $formFields = $doctrineEntityDetails->getFormFields();
+            }
+
+            $boundClassVars = [
+                'bounded_full_class_name' => $boundClassDetails->getFullName(),
+                'bounded_class_name' => $boundClassDetails->getShortName(),
+            ];
+        }
+
+        $generator->generateClass(
+            $formClassNameDetails->getFullName(),
+            'form/Type.tpl.php',
+            array_merge(['form_fields' => $formFields], $boundClassVars)
+        );
+
+        $generator->writeChanges();
+
+        $this->writeSuccessMessage($io);
+
         $io->text([
             'Next: Add fields to your form and start using it.',
             'Find the documentation at <fg=yellow>https://symfony.com/doc/current/forms.html</>',
@@ -86,6 +131,12 @@ final class MakeForm implements MakerInterface
             Validation::class,
             'validator',
             // add as an optional dependency: the user *probably* wants validation
+            false
+        );
+
+        $dependencies->addClassDependency(
+            DoctrineBundle::class,
+            'orm',
             false
         );
     }

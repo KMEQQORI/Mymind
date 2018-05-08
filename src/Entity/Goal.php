@@ -103,7 +103,7 @@ class Goal
     }
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Tache",mappedBy="goal")
+     * @ORM\OneToMany(targetEntity="App\Entity\Tache",mappedBy="goal", fetch="EAGER")
      */
     private $taches;
 
@@ -121,7 +121,7 @@ class Goal
     }
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Categorie",inversedBy="goals")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Categorie",inversedBy="goals", fetch="EAGER")
      * @ORM\JoinColumn( nullable=true))
      */
     private $categorie;
@@ -168,7 +168,7 @@ class Goal
         $statistiques=[
             "totalScore" => $totalScore,
             "gainedScore" => $gainedScore,
-            "percentage" => floor (($gainedScore/$totalScore)*100),
+            "percentage" => $totalScore != 0 ? floor (($gainedScore/$totalScore)*100):0,
             "finished" => $finished,
             "unFinished" => $unFinished,
             "totalCount" => $totalCount

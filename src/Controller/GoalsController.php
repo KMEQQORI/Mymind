@@ -1,20 +1,16 @@
 <?php
 
 namespace App\Controller;
-use App\Entity\Tache;
 use App\Entity\Categorie;
 use App\Entity\Goal;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Component\Serializer\Serializer;
 use Symfony\Component\Serializer\Encoder\XmlEncoder;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
-use Symfony\Component\Serializer\NameConverter\CamelCaseToSnakeCaseNameConverter;
 
 
 
@@ -35,7 +31,7 @@ class GoalsController extends Controller
 
         $encoders = array( new JsonEncoder());
         $normalizer = new ObjectNormalizer();
-        $normalizer->setIgnoredAttributes(array('goal','comments','goals'));
+        $normalizer->setIgnoredAttributes(array('goal','goals'));
         $normalizer->setCircularReferenceLimit(0);
         // Add Circular reference handler
         $normalizer->setCircularReferenceHandler(function ($object) {
@@ -132,6 +128,40 @@ class GoalsController extends Controller
 
 
         return new JsonResponse($response);
+    }
+
+    /**
+     * @Route("/Goals/Add", methods="POST")
+     */
+
+    public function AddNewGoal()
+    {
+
+        $em = $this->getDoctrine()->getManager();
+        $goal= new Goal();
+        $goal->setTitreGoal($_POST['titreGoal']);
+        $goal->setDescGoal($_POST['descGoal']);
+        $goal->setCreationDateGoal( new \DateTime($_POST['dateCreation']));
+
+        $categorie=$this->getDoctrine()->getRepository(Categorie::class)->find($_POST['idCategorie']);
+        $goal->setCategorie($categorie);
+
+        // tell Doctrine you want to (eventually) save the Product (no queries yet)
+        $em->persist($goal);
+
+        // actually executes the queries (i.e. the INSERT query)
+        $em->flush();
+
+
+        $response =array(
+            'code' => 0,
+            'message' => 'tache cree',
+            'errors' =>null,
+            'result' => $goal
+        );
+        return new JsonResponse($response);
+
+
     }
 
 

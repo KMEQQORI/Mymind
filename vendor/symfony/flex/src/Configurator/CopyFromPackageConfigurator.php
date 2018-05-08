@@ -56,12 +56,15 @@ class CopyFromPackageConfigurator extends AbstractConfigurator
     private function removeFiles(array $manifest, string $from, string $to)
     {
         foreach ($manifest as $source => $target) {
-            $targetPath = $this->path->concatenate([$to, $target]);
+            $target = $this->options->expandTargetDir($target);
             if ('/' === substr($source, -1)) {
                 $this->removeFilesFromDir($this->path->concatenate([$from, $source]), $this->path->concatenate([$to, $target]));
-            } elseif (file_exists($targetPath)) {
-                @unlink($targetPath);
-                $this->write(sprintf('Removed <fg=green>"%s"</>', $this->path->relativize($targetPath)));
+            } else {
+                $targetPath = $this->path->concatenate([$to, $target]);
+                if (file_exists($targetPath)) {
+                    @unlink($targetPath);
+                    $this->write(sprintf('Removed <fg=green>"%s"</>', $this->path->relativize($targetPath)));
+                }
             }
         }
     }
@@ -117,7 +120,7 @@ class CopyFromPackageConfigurator extends AbstractConfigurator
         }
     }
 
-    private function createSourceIterator(string $source, int $mode): RecursiveIteratorIterator
+    private function createSourceIterator(string $source, int $mode): \RecursiveIteratorIterator
     {
         return new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($source, \RecursiveDirectoryIterator::SKIP_DOTS), $mode);
     }
