@@ -3,6 +3,7 @@
 namespace App\Controller;
 use App\Entity\Categorie;
 use App\Entity\Goal;
+use App\Entity\Tache;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -92,6 +93,10 @@ class GoalsController extends Controller
 
         return new JsonResponse($response);
     }
+
+
+
+
 
 
     /**

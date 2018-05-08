@@ -46,9 +46,9 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <h1><i class="material-icons" onclick="loadUnDoneGoalTaskModal({{id}},'{{valueTache}}');" id="checked{{persTache}}" onMouseOut="this.style.fontSize='24px';" onMouseOver="this.style.fontSize='26px';">check_box</i>
-                                <i class="material-icons" onclick="loadDoneGoalTaskModal({{id}},'{{valueTache}}');" id="unchecked{{persTache}}"  onMouseOut="this.style.fontSize='24px';" onMouseOver="this.style.fontSize='26px';">check_box_outline_blank</i>
-                                <i class="TaskScore float-right" onclick="toggleparametres({{id}});">{{valueTache}}</i> {{titreTache}}  </h1>
+                            <h1 onclick="toggleparametres({{id}});"><i class="TaskScore{{persTache}} float-right" >{{valueTache}}</i>
+                                {{titreTache}}  </h1>
+
                         </div>
                     </div>
 
@@ -75,12 +75,22 @@
                         <div class="col-md-12">
                             <div class="row">
                                 <div class="col-md-12">
+                                <div class="input-group-append" style="width: 100% !important;">
+                                    <button class="btn btn-outline-success btn-sm" type="button" style="width: 100% !important;" onclick="loadDoneGoalTaskModal({{id}},'{{valueTache}}');"><i class="material-icons">check_box</i></button>
+                                    <button class="btn btn-outline-warning btn-sm" type="button" style="width: 100% !important;"onclick="loadUnDoneGoalTaskModal({{id}},'{{valueTache}}');"><i class="material-icons">check_box_outline_blank</i></button>
+                                    <button class="btn btn-outline-primary btn-sm" type="button" style="width: 100% !important;"onclick="duplicateGoalTask({{id}});"><i class="material-icons " >build</i></button>
+                                    <button class="btn btn-outline-secondary btn-sm" type="button" style="width: 100% !important;"onclick="duplicateGoalTask({{id}});"><i class="material-icons " >view_agenda</i></button>
+                                    <button class="btn btn-outline-warning btn-sm" type="button" style="width: 100% !important;"onclick="loadCancelModal({{id}},'{{valueTache}}')"><i class="material-icons"  style="font-size:12px important!;">cancel</i></button>
+                                    <button class="btn btn-outline-danger btn-sm" type="button" style="width: 100% !important;"onclick="loadSuppresionModal({{id}},'{{valueTache}}')"><i class="material-icons"  style="font-size:12px important!;">delete</i></button>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
                                     <div class="input-group">
                                         <input type="text" class="form-control commentInput" placeholder="Add A comment ... " id="{{id}}input">
                                         <div class="input-group-append">
                                             <button class="btn btn-outline-secondary btn-sm" type="button" onclick="commentTask({{id}})" ><i class="material-icons" style="font-size:8px important!;">comment</i></button>
-                                            <button class="btn btn-outline-warning btn-sm" type="button" onclick="loadCancelModal({{id}},'{{valueTache}}')"><i class="material-icons"  style="font-size:12px important!;">cancel</i></button>
-                                            <button class="btn btn-outline-danger btn-sm" type="button" onclick="loadSuppresionModal({{id}},'{{valueTache}}')"><i class="material-icons"  style="font-size:12px important!;">delete</i></button>
                                         </div>
                                     </div>
                                 </div>

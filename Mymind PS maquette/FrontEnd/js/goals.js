@@ -168,9 +168,20 @@ function loadUnDoneGoalTaskModal(id,value)
 function deleteTask(id)
 {
     $.get('/myMind/public/Taches/Delete/'+id, function(data) {
+        $("#TaskSuppressionModal").modal('hide');
+        getGoals();
     });
-    $("#TaskSuppressionModal").modal('hide');
-    getGoals();
+
+
+}
+
+function duplicateGoalTask(id)
+{
+    $(".LoadingGlass").fadeIn();
+    $.get('/myMind/public/Taches/Duplicate/'+id, function(data) {
+        getGoals();
+    });
+
 
 }
 

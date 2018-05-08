@@ -133,6 +133,18 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 }
                 not_app_taches_addnewtache:
 
+                // app_taches_duplicatetache
+                if (0 === strpos($pathinfo, '/Taches/Duplicate') && preg_match('#^/Taches/Duplicate/(?P<id>[^/]++)$#sD', $pathinfo, $matches)) {
+                    $ret = $this->mergeDefaults(array_replace($matches, array('_route' => 'app_taches_duplicatetache')), array (  '_controller' => 'App\\Controller\\TachesController::DuplicateTache',));
+                    if (!in_array($canonicalMethod, array('GET'))) {
+                        $allow = array_merge($allow, array('GET'));
+                        goto not_app_taches_duplicatetache;
+                    }
+
+                    return $ret;
+                }
+                not_app_taches_duplicatetache:
+
                 // app_taches_deletetache
                 if (0 === strpos($pathinfo, '/Taches/Delete') && preg_match('#^/Taches/Delete/(?P<id>[^/]++)$#sD', $pathinfo, $matches)) {
                     $ret = $this->mergeDefaults(array_replace($matches, array('_route' => 'app_taches_deletetache')), array (  '_controller' => 'App\\Controller\\TachesController::DeleteTache',));
@@ -176,6 +188,11 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return $ret;
             }
             not_app_goals_addnewgoal:
+
+            // DoneGoal
+            if (0 === strpos($pathinfo, '/Goal/Done') && preg_match('#^/Goal/Done/(?P<id>[^/]++)$#sD', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'DoneGoal')), array (  '_controller' => 'App\\Controller\\TachesController::DoneGoal',));
+            }
 
         }
 

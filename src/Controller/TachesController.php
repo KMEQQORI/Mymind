@@ -245,6 +245,43 @@ class TachesController extends Controller
         ));
     }
 
+    /**
+     * @Route("/Goal/Done/{id}",name="DoneGoal")
+     */
+
+    public function DoneGoal($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $tasks = $em->getRepository(Tache::class)->findAllGoal($id);
+
+        foreach ($tasks as $task)
+        {
+            $task->setPersTache(100);
+            $em->persist($task);
+        }
+
+
+        // tell Doctrine you want to (eventually) save the Product (no queries yet)
+
+
+        // actually executes the queries (i.e. the INSERT query)
+        $em->flush();
+
+
+
+        $response =array(
+            'code' => 0,
+            'message' => 'tache get it',
+            'errors' =>null,
+            'result' =>"Goal Done"
+        );
+
+        return new JsonResponse($response);
+    }
+
+
+
 
 
     /**
@@ -281,6 +318,7 @@ class TachesController extends Controller
     public function showTachesOfGoal($id)
     {
         $em = $this->getDoctrine()->getRepository(Tache::class);
+        $tache = $em->findAllGoal($id);
         $tache = $em->findAllGoal($id);
 
 
@@ -364,6 +402,42 @@ class TachesController extends Controller
         $tache->setGoal($goal);
 
         // tell Doctrine you want to (eventually) save the Product (no queries yet)
+        $em->persist($tache);
+
+        // actually executes the queries (i.e. the INSERT query)
+        $em->flush();
+
+
+        $response =array(
+            'code' => 0,
+            'message' => 'tache cree',
+            'errors' =>null,
+            'result' =>"Task Created"
+        );
+        return new JsonResponse($response);
+
+
+    }
+
+
+    /**
+     * @Route("/Taches/Duplicate/{id}", methods="GET")
+     */
+
+    public function DuplicateTache($id){
+
+        $em = $this->getDoctrine()->getManager();
+        $tache= new Tache();
+        $old=$this->getDoctrine()->getRepository(Tache::class)->find($id);
+
+        $tache->setTitreTache($old->getTitreTache());
+        $tache->setDescTache($old->getDescTache());
+        $tache->setPersTache($old->getPersTache());
+        $tache->setCreationDateTache(new \DateTime($old->getCreationDateTache()));
+        $tache->setDeadLineTache(new \DateTime($old->getDeadLineTache()));
+        $tache->setValueTache($old->getValueTache());
+        $tache->setGoal($old->getGoal());
+
         $em->persist($tache);
 
         // actually executes the queries (i.e. the INSERT query)
