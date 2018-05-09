@@ -6,34 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f281df09-d758-4dd1-8bbd-627c5ea7ab74" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/GoalsCards.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/GoalsCards.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/GoalsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/GoalsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TachesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TachesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/5/Z/ZWiwC78wjXuGPnOP1eM6" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/5/Z/ZWiwC78wjXuGPnOP1eM6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/7/R/OZg2CSIJwLuwuDoQ5cYF" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/7/R/OZg2CSIJwLuwuDoQ5cYF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/B/R/hcyGkunPe9SYI37O7nxJ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/B/R/hcyGkunPe9SYI37O7nxJ" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/B/U/0VDgGxbgDrym85dT-Gj0" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/B/U/0VDgGxbgDrym85dT-Gj0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/S/6tE1uoGmQaox-UTnHkek" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/S/6tE1uoGmQaox-UTnHkek" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/S/HLOmlUZE7konsl89I5-z" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/S/HLOmlUZE7konsl89I5-z" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/W/LvRlMMyGtRKf9ZYSnlPt" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/W/LvRlMMyGtRKf9ZYSnlPt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/A/Hn2Kkp3As3TK23n5-aUM" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/A/Hn2Kkp3As3TK23n5-aUM" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/I/kgTphHIJGAB76bVB0Dt0" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/I/kgTphHIJGAB76bVB0Dt0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/M/PaBShDukt02EKxcWzGS5" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/M/PaBShDukt02EKxcWzGS5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/F/F/XVmIAhtG8oyS3847qQvs" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/F/F/XVmIAhtG8oyS3847qQvs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/M/T/dzDb+vIDz6iczCaP9c8o" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/M/T/dzDb+vIDz6iczCaP9c8o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/R/A/OYwiGdUuo7SvDZ+pfNbE" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/R/A/OYwiGdUuo7SvDZ+pfNbE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/W/M/XBFpy3OdhhropELBxkdU" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/W/M/XBFpy3OdhhropELBxkdU" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/W/Y/-lAI8amwzhJGXFuKuMDc" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/W/Y/-lAI8amwzhJGXFuKuMDc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/C/EmW2pWTXRuX-loRyZyvy" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/C/EmW2pWTXRuX-loRyZyvy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/H/yxyP7pZH3r-ubx-uZzWH" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/H/yxyP7pZH3r-ubx-uZzWH" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/L/oWGREMZFL17KI8LdMAAf" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/L/oWGREMZFL17KI8LdMAAf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainerUrlMatcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainerUrlMatcher.php" afterDir="false" />
     </list>
     <ignored path="Mymind.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -144,7 +117,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TachesController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TachesController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/TachesController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
@@ -165,11 +138,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="light.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="light.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="391" column="23" selection-start-line="391" selection-start-column="23" selection-end-line="391" selection-end-column="23" />
+            <state relative-caret-position="2958">
+              <caret line="401" column="38" lean-forward="true" selection-start-line="401" selection-start-column="38" selection-end-line="401" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -279,9 +252,9 @@
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html" />
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js" />
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/GoalsCards.html" />
-        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css" />
         <option value="$PROJECT_DIR$/src/Controller/GoalsController.php" />
         <option value="$PROJECT_DIR$/src/Controller/TachesController.php" />
+        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css" />
       </list>
     </option>
   </component>
@@ -372,7 +345,7 @@
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -666,12 +639,12 @@
       <workItem from="1525632782316" duration="3144000" />
       <workItem from="1525716875408" duration="7295000" />
       <workItem from="1525736674898" duration="1260000" />
-      <workItem from="1525743760523" duration="15910000" />
+      <workItem from="1525743760523" duration="16123000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245412000" />
+    <option name="totallyTimeSpent" value="245625000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1059,13 +1032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="391" column="23" selection-start-line="391" selection-start-column="23" selection-end-line="391" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Goal.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -1125,6 +1091,13 @@
           <folding>
             <element signature="e#34#55#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2958">
+          <caret line="401" column="38" lean-forward="true" selection-start-line="401" selection-start-column="38" selection-end-line="401" selection-end-column="38" />
         </state>
       </provider>
     </entry>

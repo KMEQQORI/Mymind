@@ -232,7 +232,7 @@ pre{white-space:pre-wrap}
     border-radius:5px;
     text-decoration: line-through;
     color:rgba(9,38,74,0.5) !important;
-    border:1.5px solid #21ff04 !important;
+    border:1.5px solid #177d00 !important;
 
 }
 
@@ -252,7 +252,7 @@ pre{white-space:pre-wrap}
 .percentage100 h1
 {
     text-decoration: line-through;
-    color: rgb(33, 255, 4) !important;
+    color: rgb(23, 125, 0) !important;
 }
 
 .percentage-100 h1
@@ -403,7 +403,7 @@ h1.InProgresseHeaderScore span
     letter-spacing: 1.4px;
     font-weight: 500;
     font-size: 1.4em;
-    color: #21ff04 !important;
+    color: #177d00 !important;
     text-align: right;
 
 }
