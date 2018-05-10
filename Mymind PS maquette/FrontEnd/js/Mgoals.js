@@ -48,11 +48,11 @@ function getGoals()
             $("#inProgressTaskScore").html(inProgressTaskScore);
             $("#inProgressTaskCount").html(inProgressTaskCount+" Task");
 
-            $('.').each(function(){
+            $('.pinBoot').each(function(){
                 $(this).pinterest_grid({
                     no_columns: 2,
-                    padding_x: 5,
-                    padding_y: 5,
+                    padding_x: 3,
+                    padding_y: 3,
                     margin_bottom: 50,
                     single_column_breakpoint: 700
                 })});
@@ -94,6 +94,13 @@ function loadTaskModal(id,value)
     $("#TasksModal").modal('show');
 }
 
+function loadCancelModal(id,value)
+{
+    $("#CanceledValue").html('-'+value);
+    $("#CancelModalButton").html('<button type="button" class="btn btn-outline-secondary" onclick="CancelGoalTask('+id+')">Cancel</button>');
+    $("#GoalTaskCancelModal").modal('show');
+}
+
 function loadSuppresionModal(id,value)
 {
     $("#LosedValue").html('-'+value);
@@ -126,13 +133,13 @@ function UnDoneGoalTask(id)
     $("#GoalTaskUnDoneModal").modal('hide');
 }
 
-function ArchiveGoalTask(id)
+function CancelGoalTask(id)
 {
     $(".LoadingGlass").fadeIn();
-    $.get( "/myMind/public/Tache/Archive/"+id, function( data ) {
+    $.get( "/myMind/public/Tache/Cancel/"+id, function( data ) {
         getGoals();
     });
-    $("#GoalTaskArchiveModal").modal('hide');
+    $("#GoalTaskCancelModal").modal('hide');
 }
 
 function commentTask(id)
@@ -161,9 +168,20 @@ function loadUnDoneGoalTaskModal(id,value)
 function deleteTask(id)
 {
     $.get('/myMind/public/Taches/Delete/'+id, function(data) {
+        $("#TaskSuppressionModal").modal('hide');
+        getGoals();
     });
-    $("#TaskSuppressionModal").modal('hide');
-    getGoals();
+
+
+}
+
+function duplicateGoalTask(id)
+{
+    $(".LoadingGlass").fadeIn();
+    $.get('/myMind/public/Taches/Duplicate/'+id, function(data) {
+        getGoals();
+    });
+
 
 }
 

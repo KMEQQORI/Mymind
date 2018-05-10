@@ -4,8 +4,18 @@
            <div class="row">
              <div class="col-4">
                <h1 class="InProgresseHeaderTitle">{{titreGoal}}</h1>
-               <h2 class="InProgresseHeaderSubTitle">Categorie Title :</h1>
-               <h2 class="InProgresseHeaderSubTitle">{{creationDateGoal}}</h1>
+               <h2 class="InProgresseHeaderSubTitle">{{creationDateGoal}}Categorie Title :</h1>
+                   <div class="col-md-12">
+                       <div class="input-group-append" style="width: 100% !important;">
+                           <button class="btn btn-outline-success btn-sm" type="button" style="width: 100% !important;" onclick="loadDoneALLGoalTaskModal({{id}},'{{statistiques.totalScore}}');"><i class="material-icons">check_box</i></button>
+                           <button class="btn btn-outline-warning btn-sm" type="button" style="width: 100% !important;"onclick="loadUnDoneALLGoalTaskModal({{id}},'{{statistiques.totalScore}}');"><i class="material-icons">check_box_outline_blank</i></button>
+                           <button class="btn btn-outline-primary btn-sm" type="button" style="width: 100% !important;"onclick="duplicateALLGoalTask({{id}});"><i class="material-icons " >build</i></button>
+                           <button class="btn btn-outline-secondary btn-sm" type="button" style="width: 100% !important;"onclick="duplicateALLGoalTask({{id}});"><i class="material-icons " >view_agenda</i></button>
+                           <button class="btn btn-outline-warning btn-sm" type="button" style="width: 100% !important;"onclick="loadALLCancelModal({{id}},'{{statistiques.totalScore}}')"><i class="material-icons"  style="font-size:12px important!;">cancel</i></button>
+                           <button class="btn btn-outline-danger btn-sm" type="button" style="width: 100% !important;"onclick="loadALLSuppresionModal({{id}},'{{statistiques.totalScore}}')"><i class="material-icons"  style="font-size:12px important!;">delete</i></button>
+                       </div>
+                   </div>
+
              </div>
              <div class="col-4">
                <h1 class="InProgresseHeaderScore">
