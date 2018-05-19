@@ -170,6 +170,36 @@ class GoalsController extends Controller
     }
 
 
+    /**
+     * @Route("/Goal/Delete/{id}", methods="GET")
+     */
+
+    public function DeleteGoal($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $goal =  $this->getDoctrine()->getRepository(Goal::class)->find($id);
+
+        $em->remove($goal);
+
+
+
+
+        // actually executes the queries (i.e. the INSERT query)
+        $em->flush();
+
+
+        $response =array(
+            'code' => 0,
+            'message' => 'tache cree',
+            'errors' =>null,
+            'result' => " "
+        );
+        return new JsonResponse($response);
+
+
+    }
+
+
 
 
 }

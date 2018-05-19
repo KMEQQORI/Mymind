@@ -1,6 +1,8 @@
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="css/light.css"/>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="css/Mlight.css"/>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/flipclock.css">
   <link rel="stylesheet" type="text/css" href="css/tempusdominus-bootstrap-4.min.css" />
@@ -11,95 +13,78 @@
 
 <body>
 <div class="LoadingGlass">
-  <div class="loader"></div> 
+  <div class="loader"></div>
 </div>
 
   <div class="container-fluid">
-      <div class="row">
-        <div class="input-group rechercheDiv">
-          <input type="text" class="form-control rechercheInput" placeholder="Recherche ..." aria-label="Recipient's username" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-            <button class="btn  btn-outline-dark" type="button"><i class="material-icons">search</i></button>
-          </div>
-        </div>
-      </div>
+
       <div class="row">
         <div class="btn-group menuButtonGroup" role="group" aria-label="Basic example">
-          <button type="button" class="btn  btn-outline-dark menuButton">Home</button>
-          <button type="button" class="btn  btn-outline-dark menuButton" onclick="window.location.href='index.html'">Tasks</button>
-          <button type="button" class="btn  btn-outline-dark menuButton" onclick="window.location.href='goals.html'">Goals</button>
-          <button type="button" class="btn  btn-outline-dark menuButton">Categories</button>
-          <button type="button" class="btn  btn-outline-dark menuButton">Logout</button>
+          <button type="button" class="btn  btn-warning menuButton"><i class="material-icons menuButton">home</i></button>
+          <button type="button" class="btn  btn-warning menuButton" onclick="window.location.href='index.html'"><i class="material-icons menuButton">list</i></button>
+          <button type="button" class="btn  btn-warning menuButton" onclick="window.location.href='goals.html'"><i class="material-icons menuButton">timeline</i></button>
+          <button type="button" class="btn  btn-warning menuButton"><i class="material-icons menuButton">category</i></button>
+          <button type="button" class="btn  btn-warning menuButton"><i class="material-icons menuButton"> exit_to_app </i></button>
         </div>
       </div>
 
 
 
-
-
-        <div class="row">
           <div class="addNewGoalHeader">
             <div class="row">
-              <div class="col-3">
+              <div class="col-2">
                 <h1 class="InProgresseHeaderTitle">new Goal:</h1>
               </div>
+              <div class="col-10">
+                <div class="input-group">
+                  <input class="form-control commentInput" type="text" placeholder="Give a title to your Goal .." id="titreGoal">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <textarea class="form-control commentInput" id="descGoal" rows="3"   placeholder="Add a description to your task .."></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
               <div class="col-7">
-                <div class="alert alert-secondary" role="alert" id="creationSuccessAlert" style="display:none;">
-                  Your Goal have been successfully created!
+                <div class="input-group">
+                  <select class="form-control commentInput" id="idCategorie">
+                    <option value="0">Default Categorie</option>
+                    <option value="1">Default Categorie1</option>
+                    <option value="2">Default Categorie2</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="form-group">
+                  <input class="form-control commentInput" id="dateCreation" name="date" placeholder="Creation Date" type="text"/>
                 </div>
               </div>
               <div class="col-2">
-                <button type="button" class="btn btn-outline-warning float-right" onclick="addGoal()">Create</button>
+                <button type="button" class="btn btn-primary float-right" onclick="addGoal()">Create</button>
               </div>
+
             </div>
-            <div class="row">
-              <div class="col-9">
-                <div class="input-group">
-                  <input class="form-control commentInput" type="text" placeholder="Give a title to your Goal .." id="titreGoal"> 
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="input-group">
-                  <select class="form-control commentInput" id="idCategorie">
-                        <option value="0">Default Categorie</option>
-                        <option value="1">Default Categorie1</option>
-                        <option value="2">Default Categorie2</option>
-                  </select>
-                </div>
-              </div> 
-                
-            </div>
-            <div class="row">
-              <div class="col-9">
-                <div class="form-group">
-                  <textarea class="form-control commentInput" id="descGoal" rows="3" >Add a description to your Goal</textarea>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="form-group">
-                 <input class="form-control commentInput" id="dateCreation" name="date" placeholder="Creation Date" type="text"/>
-                </div>
-              </div> 
-                
-            </div>
+
           </div>
 
 
 
-      </div>
 
 
 
 
 
-  
-      
+
 
     <div id="inProgressList" >
 
     </div>
 
-     
+
 
   </div>
 
@@ -272,8 +257,8 @@
 </div>
 
 
-<div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="TaskSuppressionModal">
-  <div class="modal-dialog modal-lg" role="document" >
+<div class="modal fade" tabindex="-1"  aria-hidden="true" id="TaskSuppressionModal">
+  <div class="modal-dialog" role="document" >
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Delete a Task :</h5>
@@ -313,7 +298,7 @@
 
 
 
-  
+
 </body>
 
 </html>

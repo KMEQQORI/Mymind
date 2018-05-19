@@ -12,7 +12,7 @@ if (workbox) {
 
 
 workbox.precaching.precacheAndRoute([
-    'index.html',
+/*    'index.html',
     'doneTask.html',
     'InProgressTask.html',
     'card.html',
@@ -28,5 +28,6 @@ workbox.precaching.precacheAndRoute([
     'js/mustache.js',
     'js/index.js',
     'goals.html'
+    */
 ]);
 

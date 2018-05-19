@@ -1,0 +1,707 @@
+/* Import */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700|Oswald:400,300,700);
+/* Variables */
+/* Base */
+body {
+    background: #eeeeee !important;
+    font-size: 30px; !important;
+    color:black;
+}
+strong {
+    font-weight: 600;
+}
+
+#content {
+    margin-top: 0px;
+    text-align: center;
+    align:right;
+}
+/* Timeline */
+.timeline {
+    border-left: 2px solid #f99820;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #027878);
+    color: rgba(242,242,242, 0.8);
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px 10px 0% 2%;
+    letter-spacing: 0.2px;
+    position: relative;
+    line-height: 1.2;
+    font-size: 24px;
+    padding: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    list-style: none;
+    text-align: left;
+    font-weight: 100;
+    max-width: 90%;
+
+}
+
+
+.pinboot
+{
+    width: 100%;
+    margin-left:0px !important;
+    margin-right:0px  !important;
+}
+
+
+.timeline h1
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    font-size: 28px !important;
+    color:white;
+}
+
+.timeline h3
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    font-size: 28px !important;
+    padding-left:20px;
+    color:rgba(42,143, 189, 1);
+}
+
+
+
+.timeline .event {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    position: relative;
+}
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+.timeline .event:before {
+    left: 10px;
+    top :0px;
+    color: rgba(255, 255, 255, 0.4);
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+.timeline .event:after {
+    box-shadow: 0 0 0 4px #f99820;
+    left: -7px;
+    background: white;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+    top:35px;
+}
+
+.timeline .doneEvent:after {
+    box-shadow: 0 0 0 4px #2a8fbd;
+    left: -7px;
+    background: white;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+    top:35px;
+}
+
+
+.doneTimeline {
+    border-left: 2px solid #f99820;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(51, 51,51,0.1);
+    color: rgba(242,242,242, 0.8);
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px 10px 0% 5%;
+    letter-spacing: 0.5px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    list-style: none;
+    text-align: left;
+    font-weight: 100;
+    max-width: 100%;
+
+}
+
+
+.doneTimeline h1
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    font-size: 1.5em;
+    color:white;
+}
+
+.doneTimeline h3
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    font-size: 1em;
+    padding-left:20px;
+    color:rgba(42,143, 189, 1);
+}
+
+
+
+.doneTimeline .event {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    position: relative;
+}
+.doneTimeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.doneTimeline .event:before,
+.doneTimeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+.doneTimeline .event:before {
+    left: 10px;
+    top :0px;
+    color: rgba(255, 255, 255, 0.4);
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+.doneTimeline .event:after {
+    box-shadow: 0 0 0 4px #f99820;
+    left: -7px;
+    background: white;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+    top:35px;
+}
+
+
+.taskCard
+{
+    padding:20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    background-color: #ffffff;
+    border-radius:3px;
+    color:#09264a !important;
+    text-align: justify;
+}
+
+.percentage0
+{
+    cursor: pointer;
+    padding:20px;
+    margin-left: 0px;
+    margin-bottom:0px;
+    background-color: rgb(255, 255, 255);
+    font-size: 35px !important;
+    border-radius:5px;
+    color: #2a282a !important;
+    border:0.5px solid  #027878!important;
+
+}
+
+
+pre{white-space:pre-wrap}
+.percentage0 h1
+{
+    color:  #027878 !important;
+    font-weight: 300;
+    font-size: 40px !important;
+}
+
+.percentage100
+{
+    cursor: pointer;
+    padding:20px;
+    margin-left: 0px;
+    margin-bottom:0px;
+    background-color: rgba(46, 204, 113, 0.18);
+    border-radius:5px;
+    text-decoration: line-through;
+    color:rgba(9,38,74,0.5) !important;
+    border:0.5px solid #177d00 !important;
+
+}
+
+.percentage-100
+{
+    cursor: pointer;
+    padding:20px;
+    margin-left: 0px;
+    margin-bottom:0px;
+    background-color: rgba(220, 53, 69, 0.18);
+    border-radius:5px;
+    text-decoration: line-through;
+    color:rgba(9,38,74,0.5) !important;
+    border:0.5px solid #ff0019 !important;
+
+}
+
+.percentage100 h1
+{
+    text-decoration: line-through;
+    color: rgb(23, 125, 0) !important;
+    font-size: 40px !important;
+}
+
+.percentage-100 h1
+{
+    text-decoration: line-through;
+    color: rgba(255, 0, 25,1);
+    font-size: 40px !important;
+}
+
+
+.addNewTaskHeader
+{
+    background-color: rgba(255, 255, 255, 0.84);
+    border-radius:3px;
+    border:solid 1px  #f99820;
+    width:90%;
+    margin:  5px auto;
+    padding: 10px;
+}
+
+.addNewGoalHeader
+{
+    background-color: rgba(255, 255, 255, 0.86);
+    border-radius:3px;
+    border:solid 1px  #343a40;
+    width:100%;
+
+    padding: 20px;
+}
+
+.DoneHeader
+{
+    background-color: rgba(11, 11,11,0.9);
+    border-radius:3px;
+    border:solid 4px #2a8fbd;
+    width:90%;
+    margin:  0px auto;
+    padding: 10px;
+}
+
+h1.DoneHeaderTitle
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.8px;
+    font-weight: 100;
+    font-size: 1.8em;
+    color:white;
+    text-align: left;
+}
+
+h1.DoneHeaderScore
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 100;
+    font-size: 1.2em;
+    color:white;
+    text-align: center;
+}
+
+h1.DoneHeaderScore span
+{
+    background-color: #2a8fbd;
+}
+
+h1.DoneHeaderCount
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.8px;
+    font-weight: 100;
+    font-size: 1.8em;
+    color:#2a8fbd;
+    text-align: Right;
+}
+
+
+
+.inProgressHeader
+{
+    background-color: rgba(255, 255, 255, 0.96);
+
+    width:100%;
+    margin-left: 15px;
+    margin-top:30px;
+    margin-bottom: 15PX;
+    padding: 5px;
+}
+
+
+
+
+h1.InProgresseHeaderTitle
+{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size:48px;
+    color:#09264a;
+    text-align: left;
+}
+
+#inprogressList
+{
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+h2.InProgresseHeaderSubTitle
+{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color:#bbbbbb;
+    text-align: left;
+    margin-left: 10px;
+}
+
+h1.InProgresseHeaderScore
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 100;
+    font-size: 1.2em;
+    color:#607d8b;
+    text-align: center;
+}
+
+h1.InProgresseHeaderCount
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.8px;
+    font-weight: 100;
+    font-size: 1.8em;
+    color: #f99820;
+    text-align: Right;
+}
+
+
+h1.InProgresseHeaderScore span
+{
+    background-color: #f99820;
+}
+
+.TaskScore0
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    font-size: 1.4em;
+    color:#f99820 !important;
+    text-align: right;
+
+}
+
+.TaskScore100
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    font-size: 1.4em;
+    color: #177d00 !important;
+    text-align: right;
+
+}
+
+.TaskScore-100
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    font-size: 1.4em;
+    color: #ff0019 !important;
+    text-align: right;
+
+}
+
+h1.doneTaskScore
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.8px;
+    font-weight: 100;
+    font-size: 1.8em;
+    color:#2a8fbd;
+    text-align: right;
+
+}
+
+Button.archiveButton
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.3px;
+    font-weight: 100;
+    font-size: 1em;
+    text-align: center;
+    color: rgba(255, 47, 187, 1);
+    border-color: rgba(255, 47, 187,0.1);
+    background-color: rgba(255, 47, 187, 0.1);
+}
+
+
+Button.doneButton
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.3px;
+    font-weight: 100;
+    font-size: 1em;
+    text-align: center;
+    color: rgba(42, 143, 189, 1);
+    border-color: rgba(255, 47, 187,0.1);
+    background-color: rgba(42, 143, 189, 0.1);
+}
+
+Button.commentButton
+{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.3px;
+    font-weight: 100;
+    font-size: 1em;
+    text-align: center;
+    color: rgba(242, 242, 242, 1);
+    border-color: rgba(242, 242,242,0.1);
+    background-color: rgba(242, 242, 242,0.4) !important;
+
+}
+
+.commentInput
+{
+
+    margin:3px;
+}
+
+input.commentInput :focus
+{
+    color:red !important;
+}
+
+.menuButtonGroup
+{
+    width:100%;
+    margin:0px;
+    margin-bottom: 10px;
+
+}
+
+.menuButton
+{
+    width:100% !important;
+    font-size: 80px !important;
+}
+
+.rechercheInput
+{
+    margin-top:0px;
+}
+
+.rechercheInput::placeholder {
+    color: rgba(42, 42,42,0.8)!important;
+}
+
+.rechercheDiv
+{
+    margin:10px;
+    background-color:rgba(0, 0,0,0.4)!important;
+    border-radius:3%;
+}
+
+.commentInput::placeholder {
+    color: rgba(42, 42,42,0.8)!important;
+}
+
+.comments
+{
+    margin: 20px !important;
+    padding:0px !important;
+    font-family: 'Oswald', sans-serif;
+    background-color: transparent !important;
+    color: #222222;
+    font-size: 30px;
+    border-radius: 3px  !important;
+}
+
+.commentDate
+{
+    margin: 0px !important;
+    padding:0px !important;
+    font-size: 25px !important;
+    color: rgba(91, 212, 55, 0.88) !important;
+}
+
+
+.LoginCard
+{
+    width:100%;
+    background-color:#333333;
+    border:solid 1.5px #2a8fbd;
+    border-radius :3px;
+}
+
+
+.LoginCardTitle
+{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 4em;
+    text-align: center;
+    color: rgba(242, 242, 242, 1);
+}
+
+.WIP100
+{
+    color: rgba(248, 237, 255, 0.5) !important;
+    border:10px solid #ffc107 !important;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+
+
+.LoadingGlass
+{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(42, 42, 42, 0.7);
+    position:fixed;
+    z-index: 10;
+    left: 0px;
+    top:0px;
+    display: none;
+}
+
+.loader {
+    border: 16px solid rgba(242, 242, 242, 0.5);
+    border-top: 16px solid rgba(42, 143,189,0.8);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 350px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(720deg); }
+}
+
+#checked0,#unChecked-100
+{
+    display: none !important;
+    vertical-align: middle !important;
+}
+#unchecked0
+{
+    display: inline !important;
+    vertical-align: middle !important;
+}
+
+#checked100,#checked-100
+{
+    display: inline !important;
+    vertical-align: middle !important;
+}
+#unchecked100
+{
+    display: none !important;
+    vertical-align: middle !important;
+}
+i:hover
+{
+    cursor: pointer;
+}
+
+@keyframes fontbulger {
+    0% {
+        font-size: 100px;
+    }
+    70% {
+        font-size: 200px;
+    }
+    80% {
+        font-size: 200px;
+    }
+    100% {
+        font-size: 100px;
+    }
+}
+
+#GainedValue
+{
+    color:#ffc107;
+    font-weight: 900;
+    font-size: 100px;
+    animation: fontbulger 0.7s ;
+}
+
+#UnGainedValue
+{
+    color: #2a282a;
+    font-weight: 900;
+    font-size: 100px;
+    animation: fontbulger 0.7s ;
+}
+
+#LosedValue
+{
+    color:#dc3545;
+    font-weight: 900;
+    font-size: 100px;
+    animation: fontbulger 0.7s ;
+}
+
+
+#CanceledValue
+{
+    color: #2a282a;
+    font-weight: 900;
+    font-size: 100px;
+    animation: fontbulger 0.7s ;
+}
+
+.manageIcons
+{
+    display: inline-flex;
+    vertical-align: middle;
+    width:15%;
+    text-align: center;
+    font-size: 40px !important;
+    text-align: center !important;
+    color: #95a5a6 !important;
+}
+
+
+.control100,.control-100
+{
+    display: none;
+}

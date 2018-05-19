@@ -207,10 +207,11 @@ strong {
 
 .percentage0
 {
+    cursor: pointer;
     padding:20px;
     margin-left: 0px;
     margin-bottom:0px;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius:5px;
     color: #2a282a !important;
     border:1.5px solid  #027878!important;
@@ -225,10 +226,11 @@ pre{white-space:pre-wrap}
 
 .percentage100
 {
+    cursor: pointer;
     padding:20px;
     margin-left: 0px;
     margin-bottom:0px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius:5px;
     text-decoration: line-through;
     color:rgba(9,38,74,0.5) !important;
@@ -238,10 +240,11 @@ pre{white-space:pre-wrap}
 
 .percentage-100
 {
+    cursor: pointer;
     padding:20px;
     margin-left: 0px;
     margin-bottom:0px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius:5px;
     text-decoration: line-through;
     color:rgba(9,38,74,0.5) !important;
@@ -264,7 +267,7 @@ pre{white-space:pre-wrap}
 
 .addNewTaskHeader
 {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.84);
     border-radius:3px;
     border:solid 1px  #f99820;
     width:90%;
@@ -274,7 +277,7 @@ pre{white-space:pre-wrap}
 
 .addNewGoalHeader
 {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.86);
     border-radius:3px;
     border:solid 1px  #343a40;
     width:90%;
@@ -331,7 +334,7 @@ h1.DoneHeaderCount
 
 .inProgressHeader
 {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.96);
     border-radius:5px;
     border:solid 1px  #09264a;
     width:98%;
@@ -512,38 +515,23 @@ input.commentInput :focus
 
 .comments
 {
-    background-color: rgba(242, 242,242,0.1)!important;
     margin: 0px !important;
     padding:0px !important;
-    padding-left: 10px !important;
+    font-family: 'Oswald', sans-serif;
+    background-color: transparent !important;
+    color: #222222;
+    font-size: 14px;
+    border-radius: 3px  !important;
 }
 
 .commentDate
 {
-    margin: 0px ;
-    padding:0px;
-    font-size: 0.8em;
-    color:rgba(42, 143, 189, 0.8);
+    margin: 0px !important;
+    padding:0px !important;
+    font-size: 12px !important;
+    color:rgba(42, 143, 189, 0.8) !important;
 }
 
-.commentBody
-{
-    margin: 0px;
-    padding:0px;
-    font-size: 1em;
-}
-
-#comments0
-{
-    background-color:rgba(152,152,152,0.06);
-    border-radius: 3px;
-}
-
-#comments100
-{
-    background-color:rgba(52,52,52,0.1);
-    border-radius: 3px;
-}
 
 .LoginCard
 {
@@ -565,27 +553,33 @@ input.commentInput :focus
     color: rgba(242, 242, 242, 1);
 }
 
+.WIP100
+{
+    color: rgba(248, 237, 255, 0.5) !important;
+    border:1.5px solid #0024ff !important;
+    background-color: rgba(189, 220, 255, 0.85) !important;
+}
 
-/*
+
 body
 {
-  background-image: url("/myMind/public/assets/back3.jpg") !important;
+  background-image: url("/myMind/public/assets/back4.jpg") !important;
   background-attachment: fixed  !important;
   background-position: center  !important;
   background-repeat: no-repeat  !important;
   background-size: contain cover  !important;
 }
-*/
 
+/*
 
 .clockBackground
 {
-    background-color: rgba(242, 242, 242, 0.3);
+    background-color: rgba(42, 42, 42, 0.7);
     border-radius: 3px;
-    margin: 10px;
-    padding: 0px;
+    margin: 0px;
+    padding: 10px;
 }
-
+*/
 
 .LoadingGlass
 {
@@ -614,26 +608,26 @@ body
     100% { transform: rotate(720deg); }
 }
 
-#checked0
+#checked0,#unChecked-100
 {
-    display: none;
-    vertical-align: middle;
+    display: none !important;
+    vertical-align: middle !important;
 }
 #unchecked0
 {
-    display: inline;
-    vertical-align: middle;
+    display: inline !important;
+    vertical-align: middle !important;
 }
 
-#checked100
+#checked100,#checked-100
 {
-    display: inline;
-    vertical-align: middle;
+    display: inline !important;
+    vertical-align: middle !important;
 }
 #unchecked100
 {
-    display: none;
-    vertical-align: middle;
+    display: none !important;
+    vertical-align: middle !important;
 }
 i:hover
 {
@@ -686,4 +680,11 @@ i:hover
     font-weight: 900;
     font-size: 100px;
     animation: fontbulger 0.7s ;
+}
+
+.manageIcons
+{
+    display: inline-flex;
+    vertical-align: middle;
+    width:12.5%;
 }

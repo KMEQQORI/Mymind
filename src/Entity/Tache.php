@@ -32,6 +32,17 @@ class Tache
     private $Pers_Tache;
 
     /**
+     * @ORM\Column(type="integer")
+     */
+    private $Wip;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $Conf;
+
+
+    /**
      * @ORM\Column(type="text")
      */
     private $Desc_Tache;
@@ -152,6 +163,40 @@ class Tache
     {
         $this->Pers_Tache = $Pers_Tache;
     }
+
+
+    /**
+     * @return mixed
+     */
+    public function getWip()
+    {
+        return $this->Wip;
+    }
+
+    /**
+     * @param mixed $Wip
+     */
+    public function setWip($Wip)
+    {
+        $this->Wip = $Wip;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getConf()
+    {
+        return $this->Conf;
+    }
+
+    /**
+     * @param mixed $Conf
+     */
+    public function setConf($Conf)
+    {
+        $this->Conf = $Conf;
+    }
+
 
     /**
      * @return mixed

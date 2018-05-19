@@ -103,7 +103,8 @@ class Goal
     }
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Tache",mappedBy="goal", fetch="EAGER")
+     * @ORM\OneToMany(targetEntity="App\Entity\Tache",mappedBy="goal",cascade={"remove"}, fetch="EAGER")
+     * @ORM\OrderBy({"id" = "DESC"})
      */
     private $taches;
 

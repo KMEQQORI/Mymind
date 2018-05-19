@@ -100,6 +100,16 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'DoneTache')), array (  '_controller' => 'App\\Controller\\TachesController::doneTache',));
             }
 
+            // WipTache
+            if (0 === strpos($pathinfo, '/Tache/Wip') && preg_match('#^/Tache/Wip/(?P<id>[^/]++)$#sD', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'WipTache')), array (  '_controller' => 'App\\Controller\\TachesController::WipToggleTache',));
+            }
+
+            // ConfTache
+            if (0 === strpos($pathinfo, '/Tache/Conf') && preg_match('#^/Tache/Conf/(?P<id>[^/]++)$#sD', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'ConfTache')), array (  '_controller' => 'App\\Controller\\TachesController::ConfTache',));
+            }
+
             // CancelTache
             if (0 === strpos($pathinfo, '/Tache/Cancel') && preg_match('#^/Tache/Cancel/(?P<id>[^/]++)$#sD', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'CancelTache')), array (  '_controller' => 'App\\Controller\\TachesController::CancelTache',));
@@ -189,9 +199,31 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             }
             not_app_goals_addnewgoal:
 
+            // app_goals_deletegoal
+            if (0 === strpos($pathinfo, '/Goal/Delete') && preg_match('#^/Goal/Delete/(?P<id>[^/]++)$#sD', $pathinfo, $matches)) {
+                $ret = $this->mergeDefaults(array_replace($matches, array('_route' => 'app_goals_deletegoal')), array (  '_controller' => 'App\\Controller\\GoalsController::DeleteGoal',));
+                if (!in_array($canonicalMethod, array('GET'))) {
+                    $allow = array_merge($allow, array('GET'));
+                    goto not_app_goals_deletegoal;
+                }
+
+                return $ret;
+            }
+            not_app_goals_deletegoal:
+
             // DoneGoal
             if (0 === strpos($pathinfo, '/Goal/Done') && preg_match('#^/Goal/Done/(?P<id>[^/]++)$#sD', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'DoneGoal')), array (  '_controller' => 'App\\Controller\\TachesController::DoneGoal',));
+            }
+
+            // UnDoneGoal
+            if (0 === strpos($pathinfo, '/Goal/UnDone') && preg_match('#^/Goal/UnDone/(?P<id>[^/]++)$#sD', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'UnDoneGoal')), array (  '_controller' => 'App\\Controller\\TachesController::UnDoneGoal',));
+            }
+
+            // CancelGoal
+            if (0 === strpos($pathinfo, '/Goal/Cancel') && preg_match('#^/Goal/Cancel/(?P<id>[^/]++)$#sD', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'CancelGoal')), array (  '_controller' => 'App\\Controller\\TachesController::CancelGoal',));
             }
 
         }

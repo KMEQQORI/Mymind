@@ -1,8 +1,8 @@
 {
   "name": "my Mind",
   "short_name": "my Mind",
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "theme_color": "#f99820",
+  "background_color": "#f99820",
   "display": "browser",
   "Scope": "/",
   "start_url": "/",

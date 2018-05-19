@@ -1,0 +1,127 @@
+      {{#result}}
+      <hr><hr><hr>
+        <div class="row">
+         <div class="inProgressHeader">
+           <div class="row">
+             <div class="col-8">
+               <h1 class="InProgresseHeaderTitle">{{titreGoal}}</h1>
+               <h2 class="InProgresseHeaderSubTitle">{{creationDateGoal}}Categorie Title :</h1>
+                   <div class="col-12">
+                       <h3 class="InProgresseHeaderSubTitle">{{descGoal}}</h3>
+                   </div>
+
+
+
+             </div>
+             <div class="col-4">
+                 <button type="button" class="btn btn-outline-warning float-right" onclick="loadTaskModal({{id}},'{{titreGoal}}')"><i class="material-icons">note_add</i> </button>
+                 <h1 class="InProgresseHeaderScore">
+                   Gained Score :
+                   <span class="badge badge-success">
+                   {{statistiques.gainedScore}}
+                 </span> <br>
+                 Total Score :
+                 <span class="badge badge-secondary">
+                   {{statistiques.totalScore}}
+                 </span>
+               </h1>
+                 <h1 class="InProgresseHeaderScore">
+                     {{statistiques.finished}} Finish / {{statistiques.unFinished}} In Progress
+                     <span class="badge badge-info" >
+                        {{statistiques.percentage}}%
+                    </span>
+                 </h1>
+
+               <h1 class="InProgresseHeaderCount" style="text-align:center;">{{statistiques.totalCount}} Task</h1>
+
+                 <div class="col-md-12">
+                     <div class="input-group-append" style="width: 100% !important;">
+                         <button class="btn btn-success btn-sm" type="button" style="width: 100% !important;margin-left:3px;" onclick="loadDoneALLGoalTaskModal({{id}},'{{statistiques.totalScore}}');"><i class="material-icons">done_all</i></button>
+                         <button class="btn btn-warning btn-sm" type="button" style="width: 100% !important;margin-left:3px;"onclick="loadUnDoneALLGoalTaskModal({{id}},'{{statistiques.totalScore}}');"><i class="material-icons">check_box_outline_blank</i></button>
+                         <button class="btn btn-primary btn-sm" type="button" style="width: 100% !important;margin-left:3px;"onclick="duplicateALLGoalTask({{id}});"><i class="material-icons " >build</i></button>
+                         <button class="btn btn-warning btn-sm" type="button" style="width: 100% !important;margin-left:3px;"onclick="loadALLCancelModal({{id}},'{{statistiques.totalScore}}')"><i class="material-icons"  style="font-size:12px important!;">cancel</i></button>
+                         <button class="btn btn-danger btn-sm" type="button" style="width: 100% !important;margin-left:3px;"onclick="loadALLSuppresionModal({{id}},'{{statistiques.totalScore}}')"><i class="material-icons"  style="font-size:12px important!;">delete</i></button>
+                     </div>
+                 </div>
+
+             </div>
+
+           </div>
+
+
+            </div>
+        </div>
+
+                 <section id="pinBoot" class="timeline pinboot">
+
+              {{#taches}}
+              <article class="white-panel"  style="background-color:transparent" id="{{id}}" ondblclick="WipToggle({{}})">
+                <div class="percentage{{persTache}} WIP{{Wip}}" ondblclick="WipToggle({{id}});">
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 onclick="toggleparametres({{id}});"><i class="TaskScore{{persTache}} float-right" >{{valueTache}}</i>
+                                {{titreTache}}  </h1>
+
+                        </div>
+                    </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <pre>{{descTache}}</pre>
+                    </div>
+                      <i class="material-icons manageIcons "  style="color:#95a5a6" id="checked{{persTache}}" onclick="loadUnDoneGoalTaskModal({{id}},'{{valueTache}}');">check_box_outline_blank</i>
+                  </div>
+
+                    <div class="control{{persTache}}">
+                    <div class="row">
+                        <div class="col-md-12" style="text-align :center;">
+                            <i class="material-icons manageIcons"  style="color:#2ecc71" id="unchecked{{persTache}}" onclick="loadDoneGoalTaskModal({{id}},'{{valueTache}}');" >done</i>
+                            <i class="material-icons manageIcons"  style="color:#d35400"   onclick="WipToggle({{id}});">hourglass_empty</i>
+                            <span class="manageIcons float-right" onclick="confGoalTask({{id}})" style="color:#f20002 ;font-weight:200;">{{Conf}}<i class="material-icons " >favorite_border</i>
+                            </span>
+                            <i class="material-icons  manageIcons"  style="color:#2ecc71"  onclick="duplicateGoalTask({{id}});">build</i>
+                            <i class="material-icons  manageIcons"  style="color:#007bff" onclick="duplicateGoalTask({{id}});">view_agenda</i>
+                            <i class="material-icons  manageIcons"  style="color:#ffc107" onclick="loadCancelModal({{id}},'{{valueTache}}')">cancel</i>
+                            <i class="material-icons manageIcons"   style="color:#dc3545" onclick="loadSuppresionModal({{id}},'{{valueTache}}')">delete</i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <input type="text" class="form-control commentInput form-control-lg" placeholder="Add A comment ... " id="{{id}}input">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary btn-lg" type="button" onclick="commentTask({{id}})" ><i class="material-icons" style="font-size: 40px;">comment</i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="comments{{persTache}}">
+                        <div class="col-md-12">
+                            <ul class="list-group list-group-flush ">
+                                {{#comments}}
+                                <li class="list-group-item comments">
+                                    <span class="commentDate">{{creationDateComment}}</span> :
+                                    <span class="commentBody">{{commentText}}<span>
+                                </li>
+                                {{/comments}}
+                            </ul>
+                        </div>
+                    </div>
+
+                    </div>
+
+
+                </div>
+              </article>
+               {{/taches}}
+
+            </section>
+
+
+            <br>
+        </div>
+     {{/result}}

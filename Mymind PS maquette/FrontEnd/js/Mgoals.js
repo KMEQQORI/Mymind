@@ -31,7 +31,7 @@ function getGoals()
 {
     var template;
     $(".LoadingGlass").fadeIn();
-    $.get('GoalsCards.html', function(data) {
+    $.get('MGoalsCards.html', function(data) {
         template=data;
         $.get( "/myMind/public/Goals", function( data ) {
             var taskTemplate= Mustache.render(template,data);
@@ -50,16 +50,16 @@ function getGoals()
 
             $('.pinBoot').each(function(){
                 $(this).pinterest_grid({
-                    no_columns: 2,
-                    padding_x: 3,
-                    padding_y: 3,
+                    no_columns: 1,
+                    padding_x: 0,
+                    padding_y: 10,
                     margin_bottom: 50,
                     single_column_breakpoint: 700
                 })});
 
             $(".LoadingGlass").fadeOut();
         });
-        
+
     });
 
 
@@ -101,10 +101,24 @@ function loadCancelModal(id,value)
     $("#GoalTaskCancelModal").modal('show');
 }
 
+function loadALLCancelModal(id,value)
+{
+    $("#CanceledValue").html('-'+value);
+    $("#CancelModalButton").html('<button type="button" class="btn btn-outline-secondary" onclick="CancelALLGoalTask('+id+')">Cancel</button>');
+    $("#GoalTaskCancelModal").modal('show');
+}
+
 function loadSuppresionModal(id,value)
 {
     $("#LosedValue").html('-'+value);
     $("#DeleteModalButton").html('<button type="button" class="btn btn-outline-danger" onclick="deleteTask('+id+')">Delete</button>');
+    $("#TaskSuppressionModal").modal('show');
+}
+
+function loadALLSuppresionModal(id,value)
+{
+    $("#LosedValue").html('-'+value);
+    $("#DeleteModalButton").html('<button type="button" class="btn btn-outline-danger" onclick="deleteALLGoalTask('+id+')">Delete</button>');
     $("#TaskSuppressionModal").modal('show');
 }
 
@@ -113,6 +127,31 @@ function loadDoneGoalTaskModal(id,value)
     $("#GainedValue").html('+'+value);
     $("#DoneModalButton").html('<button type="button" class="btn btn-outline-success" onclick="DoneGoalTask('+id+');">Finish !</button>');
     $("#GoalTaskDoneModal").modal('show');
+}
+
+function  loadDoneALLGoalTaskModal(id,value)
+{
+    $("#GainedValue").html('+'+value);
+    $("#DoneModalButton").html('<button type="button" class="btn btn-outline-success" onclick="DoneALLGoalTask('+id+');">Finish !</button>');
+    $("#GoalTaskDoneModal").modal('show');
+
+}
+
+function confGoalTask($id)
+{
+    $(".LoadingGlass").fadeIn();
+    $.get( "/myMind/public/Tache/Conf/"+$id, function( data ) {
+        getGoals();
+    });
+}
+
+function WipToggle($id)
+{
+    $(".LoadingGlass").fadeIn();
+    $.get( "/myMind/public/Tache/Wip/"+$id, function( data ) {
+        getGoals();
+    });
+
 }
 
 function DoneGoalTask(id)
@@ -124,10 +163,29 @@ function DoneGoalTask(id)
     $("#GoalTaskDoneModal").modal('hide');
 }
 
+function DoneALLGoalTask(id)
+{
+    $(".LoadingGlass").fadeIn();
+    $.get( "/myMind/public/Goal/Done/"+id, function( data ) {
+        getGoals();
+    });
+    $("#GoalTaskDoneModal").modal('hide');
+}
+
+
 function UnDoneGoalTask(id)
 {
     $(".LoadingGlass").fadeIn();
     $.get( "/myMind/public/Tache/UnDone/"+id, function( data ) {
+        getGoals();
+    });
+    $("#GoalTaskUnDoneModal").modal('hide');
+}
+
+function UnDoneALLGoalTask(id)
+{
+    $(".LoadingGlass").fadeIn();
+    $.get( "/myMind/public/Goal/UnDone/"+id, function( data ) {
         getGoals();
     });
     $("#GoalTaskUnDoneModal").modal('hide');
@@ -138,9 +196,21 @@ function CancelGoalTask(id)
     $(".LoadingGlass").fadeIn();
     $.get( "/myMind/public/Tache/Cancel/"+id, function( data ) {
         getGoals();
+        $("#GoalTaskCancelModal").modal('hide');
     });
-    $("#GoalTaskCancelModal").modal('hide');
+
 }
+
+function CancelALLGoalTask(id)
+{
+    $(".LoadingGlass").fadeIn();
+    $.get( "/myMind/public/Goal/Cancel/"+id, function( data ) {
+        getGoals();
+        $("#GoalTaskCancelModal").modal('hide');
+    });
+
+}
+
 
 function commentTask(id)
 {
@@ -162,12 +232,29 @@ function loadUnDoneGoalTaskModal(id,value)
     $("#GoalTaskUnDoneModal").modal('show');
 }
 
+function loadUnDoneALLGoalTaskModal(id,value)
+{
+    $("#UnGainedValue").html('-'+value);
+    $("#UnDoneModalButton").html('<button type="button" class="btn btn-outline-warning" onclick="UnDoneALLGoalTask('+id+')">In Progress</button>');
+    $("#GoalTaskUnDoneModal").modal('show');
+}
+
 
 
 
 function deleteTask(id)
 {
     $.get('/myMind/public/Taches/Delete/'+id, function(data) {
+        getGoals();
+        $("#TaskSuppressionModal").modal('hide');
+    });
+
+
+}
+
+function deleteALLGoalTask(id)
+{
+    $.get('/myMind/public/Goal/Delete/'+id, function(data) {
         $("#TaskSuppressionModal").modal('hide');
         getGoals();
     });

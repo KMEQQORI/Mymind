@@ -7,12 +7,11 @@
                <h2 class="InProgresseHeaderSubTitle">{{creationDateGoal}}Categorie Title :</h1>
                    <div class="col-md-12">
                        <div class="input-group-append" style="width: 100% !important;">
-                           <button class="btn btn-outline-success btn-sm" type="button" style="width: 100% !important;" onclick="loadDoneALLGoalTaskModal({{id}},'{{statistiques.totalScore}}');"><i class="material-icons">check_box</i></button>
-                           <button class="btn btn-outline-warning btn-sm" type="button" style="width: 100% !important;"onclick="loadUnDoneALLGoalTaskModal({{id}},'{{statistiques.totalScore}}');"><i class="material-icons">check_box_outline_blank</i></button>
-                           <button class="btn btn-outline-primary btn-sm" type="button" style="width: 100% !important;"onclick="duplicateALLGoalTask({{id}});"><i class="material-icons " >build</i></button>
-                           <button class="btn btn-outline-secondary btn-sm" type="button" style="width: 100% !important;"onclick="duplicateALLGoalTask({{id}});"><i class="material-icons " >view_agenda</i></button>
-                           <button class="btn btn-outline-warning btn-sm" type="button" style="width: 100% !important;"onclick="loadALLCancelModal({{id}},'{{statistiques.totalScore}}')"><i class="material-icons"  style="font-size:12px important!;">cancel</i></button>
-                           <button class="btn btn-outline-danger btn-sm" type="button" style="width: 100% !important;"onclick="loadALLSuppresionModal({{id}},'{{statistiques.totalScore}}')"><i class="material-icons"  style="font-size:12px important!;">delete</i></button>
+                           <button class="btn btn-outline-success btn-sm" type="button" style="width: 100% !important;margin-left:3px;" onclick="loadDoneALLGoalTaskModal({{id}},'{{statistiques.totalScore}}');"><i class="material-icons">done_all</i></button>
+                           <button class="btn btn-outline-warning btn-sm" type="button" style="width: 100% !important;margin-left:3px;"onclick="loadUnDoneALLGoalTaskModal({{id}},'{{statistiques.totalScore}}');"><i class="material-icons">check_box_outline_blank</i></button>
+                           <button class="btn btn-outline-primary btn-sm" type="button" style="width: 100% !important;margin-left:3px;"onclick="duplicateALLGoalTask({{id}});"><i class="material-icons " >build</i></button>
+                           <button class="btn btn-outline-warning btn-sm" type="button" style="width: 100% !important;margin-left:3px;"onclick="loadALLCancelModal({{id}},'{{statistiques.totalScore}}')"><i class="material-icons"  style="font-size:12px important!;">cancel</i></button>
+                           <button class="btn btn-outline-danger btn-sm" type="button" style="width: 100% !important;margin-left:3px;"onclick="loadALLSuppresionModal({{id}},'{{statistiques.totalScore}}')"><i class="material-icons"  style="font-size:12px important!;">delete</i></button>
                        </div>
                    </div>
 
@@ -50,8 +49,8 @@
                  <section id="pinBoot" class="timeline pinboot">
 
               {{#taches}}
-              <article class="white-panel"  style="background-color:transparent" id="{{id}}" >
-                <div class="percentage{{persTache}}">
+              <article class="white-panel"  style="background-color:transparent" id="{{id}}" ondblclick="WipToggle({{}})">
+                <div class="percentage{{persTache}} WIP{{Wip}}" ondblclick="WipToggle({{id}});">
 
 
                     <div class="row">
@@ -68,45 +67,45 @@
                     </div>
                   </div>
 
+                    <div class="row">
+                        <div class="col-md-12" style="text-align :right;text-size:16px;">
+                            <i class="material-icons"  style="color:#2ecc71" id="unchecked{{persTache}}" onclick="loadDoneGoalTaskModal({{id}},'{{valueTache}}');" >done</i>
+                            <i class="material-icons"  style="color:#95a5a6" id="checked{{persTache}}" onclick="loadUnDoneGoalTaskModal({{id}},'{{valueTache}}');">check_box_outline_blank</i>
+                            <i class="material-icons manageIcons"  style="color:#d35400"   onclick="WipToggle({{id}});">hourglass_empty</i>
+                            <i class="material-icons manageIcons"   style="color:#2ecc71"  onclick="confGoalTask({{id}})">favorite_border</i>
+                            {{Conf}}
+                            <i class="material-icons  manageIcons"  style="color:#2ecc71"  onclick="duplicateGoalTask({{id}});">build</i>
+                            <i class="material-icons  manageIcons"  style="color:#007bff" onclick="duplicateGoalTask({{id}});">view_agenda</i>
+                            <i class="material-icons  manageIcons"  style="color:#ffc107" onclick="loadCancelModal({{id}},'{{valueTache}}')">cancel</i>
+                            <i class="material-icons manageIcons"   style="color:#dc3545" onclick="loadSuppresionModal({{id}},'{{valueTache}}')">delete</i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <input type="text" class="form-control commentInput form-control-sm" placeholder="Add A comment ... " id="{{id}}input">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary btn-sm" type="button" onclick="commentTask({{id}})" ><i class="material-icons" style="font-size: 12px;">comment</i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row" id="comments{{persTache}}">
                         <div class="col-md-12">
                             <ul class="list-group list-group-flush ">
                                 {{#comments}}
                                 <li class="list-group-item comments">
-                                    <p class="commentDate">{{creationDateComment}}</p>
-                                    <p class="commentBody">{{commentText}}<p>
+                                    <span class="commentDate">{{creationDateComment}}</span>
+                                    <span class="commentBody">{{commentText}}<span>
                                 </li>
                                 {{/comments}}
                             </ul>
                         </div>
                     </div>
 
-                    <div class="row" id="{{id}}parametres" style="display: none;">
-                        <div class="col-md-12">
-                            <div class="row">
-                                <div class="col-md-12">
-                                <div class="input-group-append" style="width: 100% !important;">
-                                    <button class="btn btn-outline-success btn-sm" type="button" style="width: 100% !important;" onclick="loadDoneGoalTaskModal({{id}},'{{valueTache}}');"><i class="material-icons">check_box</i></button>
-                                    <button class="btn btn-outline-warning btn-sm" type="button" style="width: 100% !important;"onclick="loadUnDoneGoalTaskModal({{id}},'{{valueTache}}');"><i class="material-icons">check_box_outline_blank</i></button>
-                                    <button class="btn btn-outline-primary btn-sm" type="button" style="width: 100% !important;"onclick="duplicateGoalTask({{id}});"><i class="material-icons " >build</i></button>
-                                    <button class="btn btn-outline-secondary btn-sm" type="button" style="width: 100% !important;"onclick="duplicateGoalTask({{id}});"><i class="material-icons " >view_agenda</i></button>
-                                    <button class="btn btn-outline-warning btn-sm" type="button" style="width: 100% !important;"onclick="loadCancelModal({{id}},'{{valueTache}}')"><i class="material-icons"  style="font-size:12px important!;">cancel</i></button>
-                                    <button class="btn btn-outline-danger btn-sm" type="button" style="width: 100% !important;"onclick="loadSuppresionModal({{id}},'{{valueTache}}')"><i class="material-icons"  style="font-size:12px important!;">delete</i></button>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control commentInput" placeholder="Add A comment ... " id="{{id}}input">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-outline-secondary btn-sm" type="button" onclick="commentTask({{id}})" ><i class="material-icons" style="font-size:8px important!;">comment</i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
               </article>
                {{/taches}}
