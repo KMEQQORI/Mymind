@@ -1,11 +1,9 @@
 {
-  "name": "my Mind",
-  "short_name": "my Mind",
-  "theme_color": "#f99820",
-  "background_color": "#f99820",
-  "display": "browser",
-  "Scope": "/",
-  "start_url": "/",
+  "theme_color": "#e0a800",
+  "background_color": "#e0a800",
+  "display": "fullscreen",
+  "Scope": "/mymind/mymind%20ps%20maquette/frontend/mgoals.html",
+  "start_url": "/mymind/mymind%20ps%20maquette/frontend/mgoals.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",

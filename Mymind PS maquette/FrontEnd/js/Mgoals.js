@@ -50,8 +50,8 @@ function getGoals()
 
             $('.pinBoot').each(function(){
                 $(this).pinterest_grid({
-                    no_columns: 1,
-                    padding_x: 0,
+                    no_columns: 2,
+                    padding_x: 7,
                     padding_y: 10,
                     margin_bottom: 50,
                     single_column_breakpoint: 700

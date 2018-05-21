@@ -2,201 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f281df09-d758-4dd1-8bbd-627c5ea7ab74" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/MGoalsCards.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/GoalsCards.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/GoalsCards.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/Mgoals.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/Mgoals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/Theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/Theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/Mlight.css" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/Mlight.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-128x128.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-128x128.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-128x128.png_Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-144x144.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-144x144.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-144x144.png_Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-152x152.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-152x152.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-152x152.png_Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-192x192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-192x192.png_Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-384x384.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-384x384.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-384x384.png_Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-512x512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-512x512.png_Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-72x72.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-72x72.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-72x72.png_Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-96x96.png" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-96x96.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/images/icons/icon-96x96.png_Zone.Identifier" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/Mgoals.js" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/Mgoals.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/sw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/prod/jms_serializer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/prod/jms_serializer.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/GoalsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/GoalsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TachesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TachesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Goal.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Goal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Tache.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt.legacy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getAnnotations_CacheService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getAnnotations_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getArgumentResolver_DefaultService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getArgumentResolver_RequestAttributeService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getArgumentResolver_RequestService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getArgumentResolver_ServiceService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getArgumentResolver_SessionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getArgumentResolver_VariadicService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getCacheClearerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getCacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getCache_AnnotationsService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getCache_AppClearerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getCache_AppService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getCache_GlobalClearerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getCache_SerializerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getCache_SystemClearerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getCache_SystemService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getCategorieRepositoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getCategoriesControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getCommentRepositoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getCommentsControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConfig_Resource_SelfCheckingResourceCheckerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_CommandLoaderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_AboutService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_AssetsInstallService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_CacheClearService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_CachePoolClearService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_CachePoolPruneService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_CacheWarmupService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_ConfigDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_ConfigDumpReferenceService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_ContainerDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_DebugAutowiringService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_EventDispatcherDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_PublicAlias_DoctrineCache_ContainsCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_PublicAlias_DoctrineCache_DeleteCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_PublicAlias_DoctrineCache_FlushCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_PublicAlias_DoctrineCache_StatsCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_PublicAlias_DoctrineMigrations_DiffCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_PublicAlias_DoctrineMigrations_ExecuteCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_PublicAlias_DoctrineMigrations_GenerateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_PublicAlias_DoctrineMigrations_LatestCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_PublicAlias_DoctrineMigrations_MigrateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_PublicAlias_DoctrineMigrations_StatusCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_PublicAlias_DoctrineMigrations_VersionCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_RouterDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_RouterMatchService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_Command_YamlLintService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getConsole_ErrorListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDependencyInjection_Config_ContainerParametersResourceCheckerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrineCache_Providers_Doctrine_Orm_DefaultMetadataCacheService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrineCache_Providers_Doctrine_Orm_DefaultQueryCacheService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrineCache_Providers_Doctrine_Orm_DefaultResultCacheService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_CacheClearMetadataCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_CacheClearQueryCacheCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_CacheClearResultCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_CacheCollectionRegionCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_ClearEntityRegionCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_ClearQueryRegionCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_DatabaseCreateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_DatabaseDropCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_DatabaseImportCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_Dbal_DefaultConnectionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_EnsureProductionSettingsCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_GenerateEntitiesCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_MappingConvertCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_MappingImportCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_MappingInfoCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_Orm_DefaultEntityManagerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_Orm_ProxyCacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_QueryDqlCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_QuerySqlCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_SchemaCreateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_SchemaDropCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_SchemaUpdateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getDoctrine_SchemaValidateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getFilesystemService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getFragment_Renderer_InlineService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getGoalRepositoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getGoalsControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getHttpExceptionListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getJmsSerializerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getJmsSerializer_ArrayCollectionHandlerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getJmsSerializer_ConstraintViolationHandlerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getJmsSerializer_DatetimeHandlerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getJmsSerializer_DeserializationContextFactoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getJmsSerializer_DoctrineProxySubscriberService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getJmsSerializer_FormErrorHandlerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getJmsSerializer_MetadataDriverService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getJmsSerializer_ObjectConstructorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getJmsSerializer_PhpCollectionHandlerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getJmsSerializer_SerializationContextFactoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getJmsSerializer_TwigExtension_SerializerRuntimeHelperService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getJmsSerializer_UnserializeObjectConstructorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_AutoCommand_MakeAuthService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_AutoCommand_MakeCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_AutoCommand_MakeControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_AutoCommand_MakeCrudService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_AutoCommand_MakeEntityService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_AutoCommand_MakeFixturesService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_AutoCommand_MakeFormService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_AutoCommand_MakeFunctionalTestService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_AutoCommand_MakeMigrationService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_AutoCommand_MakeSerializerEncoderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_AutoCommand_MakeSubscriberService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_AutoCommand_MakeTwigExtensionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_AutoCommand_MakeUnitTestService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_AutoCommand_MakeValidatorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_AutoCommand_MakeVoterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_ConsoleErrorListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_DoctrineHelperService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getMaker_FileManagerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getRedirectControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getRouter_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getRouting_LoaderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getSerializerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getSerializer_Mapping_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getSessionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getTacheRepositoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getTachesControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getTemplateControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getTwig_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getTwig_Command_DebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getTwig_Command_LintService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getTwig_Controller_ExceptionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getTwig_Controller_PreviewErrorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getTwig_ExceptionListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getTwig_Runtime_HttpkernelService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getTwig_TemplateCacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getWebServer_Command_ServerRunService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getWebServer_Command_ServerStartService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getWebServer_Command_ServerStatusService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/getWebServer_Command_ServerStopService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/removed-ids.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/ContainerG9CPGTt/srcDevDebugProjectContainer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/+/O/UnUKi-Mn8fAa-Yjt-oxC" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/+/O/UnUKi-Mn8fAa-Yjt-oxC" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/0/A/PQRgXoFJ3R-ug1O2AgHs" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/0/A/PQRgXoFJ3R-ug1O2AgHs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/0/H/OGipJltbsyMNWuIps1H7" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/0/H/OGipJltbsyMNWuIps1H7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/5/Z/ZWiwC78wjXuGPnOP1eM6" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/5/Z/ZWiwC78wjXuGPnOP1eM6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/7/R/OZg2CSIJwLuwuDoQ5cYF" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/7/R/OZg2CSIJwLuwuDoQ5cYF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/B/R/hcyGkunPe9SYI37O7nxJ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/B/R/hcyGkunPe9SYI37O7nxJ" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/B/U/0VDgGxbgDrym85dT-Gj0" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/B/U/0VDgGxbgDrym85dT-Gj0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/S/6tE1uoGmQaox-UTnHkek" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/S/6tE1uoGmQaox-UTnHkek" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/S/HLOmlUZE7konsl89I5-z" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/S/HLOmlUZE7konsl89I5-z" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/W/LvRlMMyGtRKf9ZYSnlPt" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/W/LvRlMMyGtRKf9ZYSnlPt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/A/Hn2Kkp3As3TK23n5-aUM" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/A/Hn2Kkp3As3TK23n5-aUM" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/I/kgTphHIJGAB76bVB0Dt0" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/I/kgTphHIJGAB76bVB0Dt0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/M/PaBShDukt02EKxcWzGS5" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/M/PaBShDukt02EKxcWzGS5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/N/u4nXPuO2Yo4aA4wW6nD1" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/N/u4nXPuO2Yo4aA4wW6nD1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/F/F/XVmIAhtG8oyS3847qQvs" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/F/F/XVmIAhtG8oyS3847qQvs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/G/+/Vtg3aNk1LK2d2OFAlFo6" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/G/+/Vtg3aNk1LK2d2OFAlFo6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/H/0/0ZA+iknIG4lW4fOmHHBY" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/H/0/0ZA+iknIG4lW4fOmHHBY" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/I/0/DV5N+RhjBoHXIBn0qZCj" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/I/0/DV5N+RhjBoHXIBn0qZCj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/M/M/rTs2dODS0HQz5n5PQMwN" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/M/M/rTs2dODS0HQz5n5PQMwN" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/M/T/dzDb+vIDz6iczCaP9c8o" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/M/T/dzDb+vIDz6iczCaP9c8o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/N/3/eCsyU3pLU2U0wKeJLSF3" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/N/3/eCsyU3pLU2U0wKeJLSF3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/N/4/89xqN7F5tAsyxmNuWB6R" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/N/4/89xqN7F5tAsyxmNuWB6R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/N/H/MDKd8VmPIb+Ki1yXI9JV" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/N/H/MDKd8VmPIb+Ki1yXI9JV" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/O/K/QlGR7dfDlfdxh71l+j8B" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/O/K/QlGR7dfDlfdxh71l+j8B" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/R/A/OYwiGdUuo7SvDZ+pfNbE" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/R/A/OYwiGdUuo7SvDZ+pfNbE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/R/V/VoastCfp3bQ38nlgx+fe" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/R/V/VoastCfp3bQ38nlgx+fe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/S/M/wIIHcO2imvo3oIgsJ7mp" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/S/M/wIIHcO2imvo3oIgsJ7mp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/U/Z/eEeVdSK0iA1eN2ivtGsC" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/U/Z/eEeVdSK0iA1eN2ivtGsC" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/W/M/XBFpy3OdhhropELBxkdU" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/W/M/XBFpy3OdhhropELBxkdU" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/W/Y/-lAI8amwzhJGXFuKuMDc" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/W/Y/-lAI8amwzhJGXFuKuMDc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/C/EmW2pWTXRuX-loRyZyvy" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/C/EmW2pWTXRuX-loRyZyvy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/H/yxyP7pZH3r-ubx-uZzWH" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/H/yxyP7pZH3r-ubx-uZzWH" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/I/6e8b9sJv2VitNVx9f9WO" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/I/6e8b9sJv2VitNVx9f9WO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/L/oWGREMZFL17KI8LdMAAf" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/L/oWGREMZFL17KI8LdMAAf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/N/tIqzATx26zyPjNV66dXq" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/N/tIqzATx26zyPjNV66dXq" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/Y/I/Me6jASjQsdUJg6VBFuDB" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/Y/I/Me6jASjQsdUJg6VBFuDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/Z/J/p7cDR57j9qpliRiFxMOT" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/Z/J/p7cDR57j9qpliRiFxMOT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/Z/R/jNgJiV87KYrGF2zG8c1w" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/Z/R/jNgJiV87KYrGF2zG8c1w" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainerUrlMatcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainerUrlMatcher.php" afterDir="false" />
     </list>
     <ignored path="Mymind.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -237,10 +64,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="sw.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/sw.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="MGoalsCards.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/MGoalsCards.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="1241">
               <caret line="73" column="76" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="82" />
             </state>
           </provider>
@@ -249,17 +85,8 @@
       <file leaf-file-name="Mgoals.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/Mgoals.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="256" column="30" selection-start-line="256" selection-start-column="30" selection-end-line="256" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mlight.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/Mlight.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="699" column="19" selection-start-line="699" selection-start-column="19" selection-end-line="699" selection-end-column="19" />
+            <state relative-caret-position="34">
+              <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -267,8 +94,17 @@
       <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            <state relative-caret-position="272">
+              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mlight.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/Mlight.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="733" column="23" selection-start-line="733" selection-start-column="23" selection-end-line="733" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -276,14 +112,8 @@
       <file leaf-file-name="Mgoals.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/Mgoals.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="4624">
+              <caret line="272" column="29" selection-start-line="272" selection-start-column="29" selection-end-line="272" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -291,7 +121,7 @@
       <file leaf-file-name="GoalsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/GoalsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
+            <state relative-caret-position="2856">
               <caret line="178" column="49" selection-start-line="178" selection-start-column="49" selection-end-line="178" selection-end-column="49" />
             </state>
           </provider>
@@ -300,7 +130,7 @@
       <file leaf-file-name="Tache.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Tache.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
+            <state relative-caret-position="3978">
               <caret line="235" column="72" selection-start-line="235" selection-start-column="72" selection-end-line="235" selection-end-column="91" />
             </state>
           </provider>
@@ -309,20 +139,8 @@
       <file leaf-file-name="Goal.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Goal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
+            <state relative-caret-position="1751">
               <caret line="105" column="88" selection-start-line="105" selection-start-column="88" selection-end-line="105" selection-end-column="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TachesController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/TachesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="601" column="8" selection-start-line="601" selection-start-column="8" selection-end-line="601" selection-end-column="28" />
-              <folding>
-                <element signature="e#34#55#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -331,9 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>remove</find>
-      <find>delete</find>
-      <find>cancel</find>
       <find>undone</find>
       <find>add</find>
       <find>pinboot</find>
@@ -361,6 +176,9 @@
       <find>deley</find>
       <find>find</find>
       <find>deleteALLGoalTask</find>
+      <find>sw</find>
+      <find>commentI</find>
+      <find>fontbulger</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -418,15 +236,15 @@
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css" />
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/Theme.css" />
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/GoalsCards.html" />
-        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/Mgoals.js" />
-        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/sw.js" />
-        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/manifest.json" />
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js" />
-        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/Mgoals.html" />
         <option value="$PROJECT_DIR$/src/Controller/TachesController.php" />
         <option value="$PROJECT_DIR$/src/Controller/GoalsController.php" />
         <option value="$PROJECT_DIR$/src/Entity/Goal.php" />
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/MGoalsCards.html" />
+        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/sw.js" />
+        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/manifest.json" />
+        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/Mgoals.html" />
+        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/Mgoals.js" />
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/Mlight.css" />
       </list>
     </option>
@@ -519,8 +337,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-67" />
-    <option name="y" value="16" />
+    <option name="x" value="889" />
+    <option name="y" value="1247" />
     <option name="width" value="1382" />
     <option name="height" value="784" />
   </component>
@@ -845,12 +663,16 @@
       <workItem from="1526672233074" duration="573000" />
       <workItem from="1526675785258" duration="863000" />
       <workItem from="1526736068870" duration="427000" />
-      <workItem from="1526751945319" duration="1391000" />
+      <workItem from="1526751945319" duration="1772000" />
+      <workItem from="1526920374950" duration="1830000" />
+      <workItem from="1526922241302" duration="1782000" />
+      <workItem from="1526924071756" duration="1795000" />
+      <workItem from="1526925908322" duration="230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="287943000" />
+    <option name="totallyTimeSpent" value="293961000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -862,7 +684,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1132" y="1072" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23792094" />
@@ -1200,13 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/sw.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/Theme.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
@@ -1221,10 +1036,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/manifest.json">
+    <entry file="file://$PROJECT_DIR$/src/Controller/TachesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        <state relative-caret-position="9979">
+          <caret line="601" column="8" selection-start-line="601" selection-start-column="8" selection-end-line="601" selection-end-column="28" />
+          <folding>
+            <element signature="e#34#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Tache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3978">
+          <caret line="235" column="72" selection-start-line="235" selection-start-column="72" selection-end-line="235" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Goal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="105" column="88" selection-start-line="105" selection-start-column="88" selection-end-line="105" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/MGoalsCards.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="76" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/sw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1235,68 +1081,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/Mgoals.html">
+    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/TachesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="601" column="8" selection-start-line="601" selection-start-column="8" selection-end-line="601" selection-end-column="28" />
-          <folding>
-            <element signature="e#34#55#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/GoalsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
+        <state relative-caret-position="2856">
           <caret line="178" column="49" selection-start-line="178" selection-start-column="49" selection-end-line="178" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Tache.php">
+    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/Mgoals.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="235" column="72" selection-start-line="235" selection-start-column="72" selection-end-line="235" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Goal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="105" column="88" selection-start-line="105" selection-start-column="88" selection-end-line="105" selection-end-column="88" />
+        <state relative-caret-position="4624">
+          <caret line="272" column="29" selection-start-line="272" selection-start-column="29" selection-end-line="272" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/Mgoals.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="256" column="30" selection-start-line="256" selection-start-column="30" selection-end-line="256" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/MGoalsCards.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="73" column="76" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="82" />
+        <state relative-caret-position="34">
+          <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/Mlight.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="699" column="19" selection-start-line="699" selection-start-column="19" selection-end-line="699" selection-end-column="19" />
+        <state relative-caret-position="462">
+          <caret line="733" column="23" selection-start-line="733" selection-start-column="23" selection-end-line="733" selection-end-column="23" />
         </state>
       </provider>
     </entry>

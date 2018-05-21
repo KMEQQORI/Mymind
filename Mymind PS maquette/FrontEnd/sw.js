@@ -1,4 +1,6 @@
-importScripts('./node_modules/workbox-sw/build/workbox-sw.js')
+if( 'function' === typeof importScripts) {
+    importScripts('./node_modules/workbox-sw/build/workbox-sw.js');
+}
 const staticAssets =[
     './',
     './doneTask.hml'
@@ -12,7 +14,7 @@ if (workbox) {
 
 
 workbox.precaching.precacheAndRoute([
-/*    'index.html',
+    'index.html',
     'doneTask.html',
     'InProgressTask.html',
     'card.html',
@@ -28,6 +30,5 @@ workbox.precaching.precacheAndRoute([
     'js/mustache.js',
     'js/index.js',
     'goals.html'
-    */
 ]);
 
