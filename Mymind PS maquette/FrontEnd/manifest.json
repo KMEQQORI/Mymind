@@ -2,8 +2,8 @@
   "theme_color": "#e0a800",
   "background_color": "#e0a800",
   "display": "fullscreen",
-  "Scope": "/mymind/mymind%20ps%20maquette/frontend/Mgoals.html",
-  "start_url": "/mymind/mymind%20ps%20maquette/frontend/Mgoals.html",
+  "Scope": "/myMind/Mymind%20PS%20maquette/FrontEnd/Mgoals.html",
+  "start_url": "/myMind/Mymind%20PS%20maquette/FrontEnd/Mgoals.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
