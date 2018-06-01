@@ -14,92 +14,130 @@
   <div class="loader"></div> 
 </div>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-7">
-        <div class="row">
-          <div class="addNewGoalHeader">
 
-            <div class="row">
-              <div class="col-9">
-                <div class="input-group">
-                  <input class="form-control commentInput" type="text" placeholder="Give a title to your Goal .." id="titreGoal"> 
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="input-group">
-                  <select class="form-control commentInput" id="idCategorie">
-                        <option value="0">Default Categorie</option>
-                        <option value="1">Default Categorie1</option>
-                        <option value="2">Default Categorie2</option>
-                  </select>
-                </div>
-              </div> 
-                
-            </div>
-            <div class="row">
-              <div class="col-9">
-                <div class="form-group">
-                  <textarea class="form-control commentInput" id="descGoal" rows="3" >Add a description to your Goal</textarea>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="form-group">
-                 <input class="form-control commentInput" id="dateCreation" name="date" placeholder="Creation Date" type="text"/>
-                    <button type="button" class="btn btn-outline-warning block-center" onclick="addGoal()">Create Goal</button>
-                </div>
-              </div> 
-                
-            </div>
-          </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 0px;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01" >
+        <a class="navbar-brand" href="#">Hidden brand</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item ">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/myMind/Mymind%20PS%20maquette/FrontEnd/tasks.html">Tasks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/myMind/Mymind%20PS%20maquette/FrontEnd/goals.html">Goals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  disabled" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Notes</a>
+            </li>
+        </ul>
 
-        </div>
-
-      </div>
-
-
-      <div class="col-5">
-        <div class=" clockBackground">
-        <div class="row">
-          <div class="input-group rechercheDiv">
+        <div class="input-group rechercheDiv">
             <input type="text" class="form-control rechercheInput" placeholder="Recherche ..." aria-label="Recipient's username" aria-describedby="basic-addon2">
             <div class="input-group-append">
-              <button class="btn  btn-outline-dark" type="button"><i class="material-icons">search</i></button>
+                <button class="btn  btn-outline-dark" type="button"><i class="material-icons">search</i></button>
             </div>
-          </div>
         </div>
-        <div class="row">
-          <div class="btn-group menuButtonGroup" role="group" aria-label="Basic example">
-            <button type="button" class="btn  btn-warning menuButton">Home</button>
-            <button type="button" class="btn  btn-warning menuButton" onclick="window.location.href='index.html'">Tasks</button>
-            <button type="button" class="btn  btn-warning menuButton" onclick="window.location.href='goals.html'">Goals</button>
-            <button type="button" class="btn  btn-warning menuButton">Categories</button>
-            <button type="button" class="btn  btn-warning menuButton">Logout</button>
-          </div>
-        </div>
-            <div class="form-group">
-            <select class="form-control form-control-lg" id="GoalSelection" onchange="changeGoalSelection();">
-                <option value="0"> Select a goal ... </option>
-                <option value="7"> Select a goal ... </option>
-                <option value="8"> Select a goal ... </option>
-                <option value="12"> Select a goal ... </option>
-            </select>
-        </div>
-      </div>
-      </div>
-    </div>
 
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Social<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Logout</a>
+            </li>
 
-  
-      
-
-    <div id="inProgressList" >
+        </ul>
 
     </div>
+</nav>
 
-     
 
-  </div>
+<div class="container-fluid">
+
+<div class="row">
+    <div class="col-3">
+        <div class="sticky-top">
+
+
+            <div class="row">
+                <div class="addNewGoalHeader">
+                    <h1 class="InProgresseHeaderTitle">New goal    </h1>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="input-group">
+                                <input class="form-control commentInput" type="text" placeholder="Give a title to your Goal .." id="titreGoal">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group">
+                                <select class="form-control commentInput" id="idCategorie">
+                                    <option value="0">Default Categorie</option>
+                                    <option value="1">Default Categorie1</option>
+                                    <option value="2">Default Categorie2</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <textarea class="form-control commentInput" id="descGoal" rows="3" placeholder="Add a description to your Goal"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <input class="form-control commentInput" id="dateCreation" name="date" placeholder="Creation Date" type="text"/>
+                                <button type="button" class="btn btn-outline-primary float-right" onclick="addGoal()">Create Goal</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <hr>
+
+                    <h1 class="InProgresseHeaderTitle">Filter :  </h1>
+                    <div class="form-group">
+                        <select class="form-control form-control-lg" id="GoalSelection" onchange="changeGoalSelection();">
+                            <option value="0"> Select a goal ... </option>
+                            <option value="7"> Select a goal ... </option>
+                            <option value="8"> Select a goal ... </option>
+                            <option value="12"> Select a goal ... </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <select class="form-control form-control-lg" id="GoalSelection" onchange="changeGoalSelection();">
+                            <option value="0"> Select a Categorie ... </option>
+                            <option value="7"> Select a goal ... </option>
+                            <option value="8"> Select a goal ... </option>
+                            <option value="12"> Select a goal ... </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-9">
+        <div id="inProgressList" >
+
+        </div>
+    </div>
+</div>
+
+
 
 
 <div class="modal fade" tabindex="-1" role="dialog" id="TasksModal">
@@ -136,7 +174,7 @@
             <div class="row">
               <div class="col-9">
                 <div class="form-group">
-                  <textarea class="form-control" id="descTache" rows="3" >Add a description to your task</textarea>
+                  <textarea class="form-control" id="descTache" rows="3" placeholder="Add a description to your task"></textarea>
                 </div>
               </div>
               <div class="col-3">
