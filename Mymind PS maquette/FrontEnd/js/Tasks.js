@@ -35,7 +35,7 @@ function changeGoalSelection()
 
 function actualiseSelectors()
 {
-    $.get("/mymind/public/GoalsTitles", function( data ) {
+    $.get("/myMind/public/GoalsTitles", function( data ) {
         $("#GoalSelection").html("<option value=\"0\"> Select Goal .... </option>");
         $("#GoalSelection").append("<option value=\"0\"> Show All Goals </option>");
         for (i = 0; i < data.result.length; ++i)
