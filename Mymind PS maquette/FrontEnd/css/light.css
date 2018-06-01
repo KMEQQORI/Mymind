@@ -337,8 +337,8 @@ h1.DoneHeaderCount
     background-color: rgba(255, 255, 255, 0.96);
     border-radius:5px;
     border:solid 1px  #09264a;
-    width:98%;
-    margin:  0px auto;
+    width:100%;
+    margin:  10px auto;
     padding: 10px;
 }
 
@@ -563,7 +563,7 @@ input.commentInput :focus
 
 body
 {
-  background-image: url("/myMind/public/assets/back4.jpg") !important;
+  background-image: url("/myMind/public/assets/back5.jpg") !important;
   background-attachment: fixed  !important;
   background-position: center  !important;
   background-repeat: no-repeat  !important;

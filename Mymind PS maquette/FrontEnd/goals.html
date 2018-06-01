@@ -19,19 +19,7 @@
       <div class="col-7">
         <div class="row">
           <div class="addNewGoalHeader">
-            <div class="row">
-              <div class="col-3">
-                <h1 class="InProgresseHeaderTitle">new Goal:</h1>
-              </div>
-              <div class="col-7">
-                <div class="alert alert-secondary" role="alert" id="creationSuccessAlert" style="display:none;">
-                  Your Goal have been successfully created!
-                </div>
-              </div>
-              <div class="col-2">
-                <button type="button" class="btn btn-outline-warning float-right" onclick="addGoal()">Create</button>
-              </div>
-            </div>
+
             <div class="row">
               <div class="col-9">
                 <div class="input-group">
@@ -58,6 +46,7 @@
               <div class="col-3">
                 <div class="form-group">
                  <input class="form-control commentInput" id="dateCreation" name="date" placeholder="Creation Date" type="text"/>
+                    <button type="button" class="btn btn-outline-warning block-center" onclick="addGoal()">Create Goal</button>
                 </div>
               </div> 
                 
@@ -81,20 +70,21 @@
         </div>
         <div class="row">
           <div class="btn-group menuButtonGroup" role="group" aria-label="Basic example">
-            <button type="button" class="btn  btn-outline-warning menuButton">Home</button>
-            <button type="button" class="btn  btn-outline-warning menuButton" onclick="window.location.href='index.html'">Tasks</button>
-            <button type="button" class="btn  btn-outline-warning menuButton" onclick="window.location.href='goals.html'">Goals</button>
-            <button type="button" class="btn  btn-outline-warning menuButton">Categories</button>
-            <button type="button" class="btn  btn-outline-warning menuButton">Logout</button>
+            <button type="button" class="btn  btn-warning menuButton">Home</button>
+            <button type="button" class="btn  btn-warning menuButton" onclick="window.location.href='index.html'">Tasks</button>
+            <button type="button" class="btn  btn-warning menuButton" onclick="window.location.href='goals.html'">Goals</button>
+            <button type="button" class="btn  btn-warning menuButton">Categories</button>
+            <button type="button" class="btn  btn-warning menuButton">Logout</button>
           </div>
         </div>
-
-        <div class="row ">
-          <div class="col-12" style="text-align: center;">
-              <div class="clock center-block" style="display: inline-block;"> </div>
-          </div>
+            <div class="form-group">
+            <select class="form-control form-control-lg" id="GoalSelection" onchange="changeGoalSelection();">
+                <option value="0"> Select a goal ... </option>
+                <option value="7"> Select a goal ... </option>
+                <option value="8"> Select a goal ... </option>
+                <option value="12"> Select a goal ... </option>
+            </select>
         </div>
-
       </div>
       </div>
     </div>

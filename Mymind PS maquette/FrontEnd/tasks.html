@@ -1,0 +1,318 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/light.css"/>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/flipclock.css">
+  <link rel="stylesheet" type="text/css" href="css/tempusdominus-bootstrap-4.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-datepicker3.css"/>
+  <link rel="stylesheet" href="css/theme.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+<div class="LoadingGlass">
+  <div class="loader"></div> 
+</div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-7">
+        <div class="row">
+          <div class="addNewGoalHeader">
+
+            <div class="row">
+              <div class="col-9">
+                <div class="input-group">
+                  <input class="form-control commentInput" type="text" placeholder="Give a title to your Goal .." id="titreGoal"> 
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                  <select class="form-control commentInput" id="idCategorie">
+                        <option value="0">Default Categorie</option>
+                        <option value="1">Default Categorie1</option>
+                        <option value="2">Default Categorie2</option>
+                  </select>
+                </div>
+              </div> 
+                
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <div class="form-group">
+                  <textarea class="form-control commentInput" id="descGoal" rows="3" >Add a description to your Goal</textarea>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="form-group">
+                 <input class="form-control commentInput" id="dateCreation" name="date" placeholder="Creation Date" type="text"/>
+                    <button type="button" class="btn btn-outline-warning block-center" onclick="addGoal()">Create Goal</button>
+                </div>
+              </div> 
+                
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-5">
+        <div class=" clockBackground">
+        <div class="row">
+          <div class="input-group rechercheDiv">
+            <input type="text" class="form-control rechercheInput" placeholder="Recherche ..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn  btn-outline-dark" type="button"><i class="material-icons">search</i></button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="btn-group menuButtonGroup" role="group" aria-label="Basic example">
+            <button type="button" class="btn  btn-warning menuButton">Home</button>
+            <button type="button" class="btn  btn-warning menuButton" onclick="window.location.href='index.html'">Tasks</button>
+            <button type="button" class="btn  btn-warning menuButton" onclick="window.location.href='goals.html'">Goals</button>
+            <button type="button" class="btn  btn-warning menuButton">Categories</button>
+            <button type="button" class="btn  btn-warning menuButton">Logout</button>
+          </div>
+        </div>
+            <div class="form-group">
+            <select class="form-control form-control-lg" id="GoalSelection" onchange="changeGoalSelection();">
+                <option value="0"> Select a goal ... </option>
+                <option value="7"> Select a goal ... </option>
+                <option value="8"> Select a goal ... </option>
+                <option value="12"> Select a goal ... </option>
+            </select>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+  
+      
+
+    <div id="inProgressList" >
+
+    </div>
+
+     
+
+  </div>
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="TasksModal">
+  <div class="modal-dialog modal-lg" role="document" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">new Task :</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+            <div class="row">
+              <div class="col-7">
+                <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Give a title to your task .." id="titreTache">
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Value" id="valueTache">
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="input-group">
+                  <select class="form-control" id="idGoal" disabled>
+
+                  </select>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <div class="form-group">
+                  <textarea class="form-control" id="descTache" rows="3" >Add a description to your task</textarea>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="form-group">
+                  <input class="form-control" id="dateCreation" name="date" placeholder="Creation Date" type="text"/>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="deadLine" name="date" placeholder="Deadline" type="text"/>
+                </div>
+              </div>
+
+            </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-warning float-right" onclick="addTask()">Create</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="">
+  <div class="modal-dialog modal-lg" role="document" >
+    <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">new Task :</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+
+      <div class="row">
+        <div class="col-9">
+          You are about to delete this tasks : "<span id="TaskToDelete"></span>"
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Delete</button>
+        <button type="button" class="btn  btn-outline-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="GoalTaskDoneModal">
+  <div class="modal-dialog modal-lg" role="document" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Finish a Task :</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="row">
+          <div class="col-12" style="text-align: center;">
+            Congratulation You just finished a task with a Value of :<br> <span id="GainedValue"></span>
+          </div>
+            <br>
+          <div class="col-12 text-center" id="DoneModalButton">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="GoalTaskUnDoneModal">
+  <div class="modal-dialog modal-lg" role="document" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">UnDone a Task :</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="row">
+          <div class="col-12" style="text-align: center;">
+            You are about to make this task in progress Again  :<br> <span id="UnGainedValue"></span>
+          </div>
+          <br>
+          <div class="col-12 text-center" id="UnDoneModalButton">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="GoalTaskCancelModal">
+  <div class="modal-dialog modal-lg" role="document" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cancel a Task :</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="row">
+          <div class="col-12" style="text-align: center;">
+            You are about to cancel this task you will still be able to see it in your Goal view  :<br> <span id="CanceledValue"></span>
+          </div>
+          <br>
+          <div class="col-12 text-center" id="CancelModalButton">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="TaskSuppressionModal">
+  <div class="modal-dialog modal-lg" role="document" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Delete a Task :</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="row">
+          <div class="col-12" style="text-align: center;">
+            Men you are about to delete a task and lose :<br> <span id="LosedValue"></span>
+          </div>
+          <br>
+          <div class="col-12 text-center" id="DeleteModalButton">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/moment.min.js"></script>
+  <script type="text/javascript" src="js/tempusdominus-bootstrap-4.min.js"></script>
+  <script type="text/javascript" src="js/flipclock.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+  <script type="text/javascript" src="js/mustache.js"></script>
+  <script type="text/javascript" src="js/Tasks.js"></script>
+  <script src="js/theme.js"></script>
+
+
+
+  
+</body>
+
+</html>
+

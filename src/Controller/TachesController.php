@@ -156,6 +156,64 @@ class TachesController extends Controller
 
 
     /**
+     * @Route("/Taches/InProgress/Likes/{id}",name="AllInProgressByLikesTaches")
+     */
+
+    public function showAllInProgressByLikesTaches($id)
+    {
+        $em = $this->getDoctrine()->getRepository(Tache::class);
+
+        if($id == 0)
+        {
+            $inProgress = $em->findBy(['Wip' => '100'],['Conf' => 'DESC']);
+            $toDo= $em->findBy(['Pers_Tache' => '0','Wip' => '0'],['Conf' => 'DESC']);
+        }
+        else
+        {
+            $inProgress = $em->findBy(['Wip' => '100', "goal" =>$id],['Conf' => 'DESC']);
+            $toDo= $em->findBy(['Pers_Tache' => '0','Wip' => '0', "goal" =>$id],['Conf' => 'DESC']);
+        }
+
+
+
+        $encoders = array( new JsonEncoder());
+        $normalizer = new ObjectNormalizer();
+        $normalizer->setIgnoredAttributes(array('taches','goals'));
+        $normalizer->setCircularReferenceLimit(-1);
+        // Add Circular reference handler
+        $normalizer->setCircularReferenceHandler(function ($object) {
+            return $object->getId();
+        });
+        $normalizers = array($normalizer);
+
+        if($inProgress == NULL)
+        {
+            $taskPage=["message"=>"you don't have any tasks in Progress ,What the hell are you doing !!!!","toDo"=>$toDo];
+        }
+        elseif($inProgress == NULL && $toDo == NULL)
+        {
+            $taskPage=["message"=>"You don't have any tasks to Do or In progress Please add new tasks in your goal page","toDo"=>$toDo];
+        }
+        else
+        {
+            $taskPage=["inProgress"=>$inProgress,"toDo"=>$toDo];
+        }
+
+
+        $serializer = new Serializer($normalizers, $encoders);
+        $json = $serializer->serialize($taskPage, 'json');
+
+        $response =array(
+            'code' => 0,
+            'errors' =>null,
+            'result' =>json_decode($json)
+        );
+
+        return new JsonResponse($response);
+    }
+
+
+    /**
      * @Route("/Tache/{id}",name="ShowTache")
      */
 
@@ -202,6 +260,7 @@ class TachesController extends Controller
 
         $tache = $em->getRepository(Tache::class)->find($id);
         $tache->setPersTache(100);
+        $tache->setWip(0);
 
         // tell Doctrine you want to (eventually) save the Product (no queries yet)
         $em->persist($tache);

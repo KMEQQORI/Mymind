@@ -1,4 +1,4 @@
-
+var goalId=0;
 
 
 
@@ -26,14 +26,45 @@ $(document).ready(function(){
 });
 
 
+function changeGoalSelection()
+{
+    goalId=$("#GoalSelection").val();
+    getGoals();
+}
+
+
+function actualiseSelectors()
+{
+    $.get("/mymind/public/GoalsTitles", function( data ) {
+        $("#GoalSelection").html("<option value=\"0\"> Select Goal .... </option>");
+        $("#GoalSelection").append("<option value=\"0\"> Show All Goals </option>");
+        for (i = 0; i < data.result.length; ++i)
+        {
+            $("#GoalSelection").append("<option value=\""+data.result[i].id+"\">"+data.result[i].titreGoal+"</option>")
+        }
+    });
+
+}
+
+
 
 function getGoals()
 {
+    actualiseSelectors();
     var template;
     $(".LoadingGlass").fadeIn();
+
+    if(goalId == 0)
+    {
+        sourceUrl="/myMind/public/Goals";
+    }
+    else
+    {
+        sourceUrl="/myMind/public/Goal/"+goalId;
+    }
     $.get('GoalsCards.html', function(data) {
         template=data;
-        $.get( "/myMind/public/Goals", function( data ) {
+        $.get(sourceUrl, function( data ) {
             var taskTemplate= Mustache.render(template,data);
             $("#inProgressList").html(taskTemplate);
 
@@ -48,7 +79,7 @@ function getGoals()
             $("#inProgressTaskScore").html(inProgressTaskScore);
             $("#inProgressTaskCount").html(inProgressTaskCount+" Task");
 
-            $('.pinBoot').each(function(){
+            $('.pinboot').each(function(){
                 $(this).pinterest_grid({
                     no_columns: 4,
                     padding_x: 5,

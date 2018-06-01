@@ -26,13 +26,55 @@ class GoalsController extends Controller
     public function showAllGoals()
     {
         $em = $this->getDoctrine()->getRepository(Goal::class);
-        $goals = $em->findAll();
+        $goals = $em->findBy([],['id' => 'DESC']);
 
 
 
         $encoders = array( new JsonEncoder());
         $normalizer = new ObjectNormalizer();
         $normalizer->setIgnoredAttributes(array('goal','goals'));
+        $normalizer->setCircularReferenceLimit(0);
+        // Add Circular reference handler
+        $normalizer->setCircularReferenceHandler(function ($object) {
+            return $object->getId();
+        });
+        $normalizers = array($normalizer);
+
+
+
+
+        $serializer = new Serializer($normalizers, $encoders);
+        $json = $serializer->serialize($goals, 'json');
+
+        $response =array(
+            'code' => 0,
+            'message' => 'tache get it',
+            'errors' =>null,
+            'result' =>json_decode($json)
+        );
+
+
+
+
+        return new JsonResponse($response);
+    }
+
+
+
+    /**
+     * @Route("/GoalsTitles",name="AllGoalsTitles")
+     */
+
+    public function showAllGoalsTitles()
+    {
+        $em = $this->getDoctrine()->getRepository(Goal::class);
+        $goals = $em->findAll();
+
+
+
+        $encoders = array( new JsonEncoder());
+        $normalizer = new ObjectNormalizer();
+        $normalizer->setIgnoredAttributes(array('goal','goals','descGoal','creationDateGoal','taches','categorie','statistiques'));
         $normalizer->setCircularReferenceLimit(0);
         // Add Circular reference handler
         $normalizer->setCircularReferenceHandler(function ($object) {
@@ -70,6 +112,9 @@ class GoalsController extends Controller
         $em = $this->getDoctrine()->getRepository(Goal::class);
         $goals = $em->find($id);
 
+        $goals=[$goals];
+
+
         $encoders = array( new JsonEncoder());
         $normalizer = new ObjectNormalizer();
         $normalizer->setIgnoredAttributes(array('categorie'));
@@ -83,6 +128,9 @@ class GoalsController extends Controller
 
         $serializer = new Serializer($normalizers, $encoders);
         $json = $serializer->serialize($goals, 'json');
+
+
+
 
         $response =array(
             'code' => 0,

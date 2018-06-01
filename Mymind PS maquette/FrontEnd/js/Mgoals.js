@@ -48,7 +48,7 @@ function getGoals()
             $("#inProgressTaskScore").html(inProgressTaskScore);
             $("#inProgressTaskCount").html(inProgressTaskCount+" Task");
 
-            $('.pinBoot').each(function(){
+            $('.pinboot').each(function(){
                 $(this).pinterest_grid({
                     no_columns: 2,
                     padding_x: 7,

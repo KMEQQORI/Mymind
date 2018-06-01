@@ -159,7 +159,9 @@ class Goal
 
         foreach ($tasks as $task){
             //commandes
+
             $totalScore+=$task->getValueTache();
+            if($task->getPersTache()>0)
             $gainedScore+=$task->getValueTache()*$task->getPersTache()/100;
             $finished+=($task->getPersTache()==100);
             $unFinished+=($task->getPersTache()==0);

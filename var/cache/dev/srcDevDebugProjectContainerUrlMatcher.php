@@ -83,9 +83,17 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                     return array (  '_controller' => 'App\\Controller\\TachesController::showAllDoneTaches',  '_route' => 'AllDoneTaches',);
                 }
 
-                // AllInProgressTaches
-                if ('/Taches/InProgress' === $pathinfo) {
-                    return array (  '_controller' => 'App\\Controller\\TachesController::showAllInProgressTaches',  '_route' => 'AllInProgressTaches',);
+                if (0 === strpos($pathinfo, '/Taches/InProgress')) {
+                    // AllInProgressTaches
+                    if ('/Taches/InProgress' === $pathinfo) {
+                        return array (  '_controller' => 'App\\Controller\\TachesController::showAllInProgressTaches',  '_route' => 'AllInProgressTaches',);
+                    }
+
+                    // AllInProgressByLikesTaches
+                    if (0 === strpos($pathinfo, '/Taches/InProgress/Likes') && preg_match('#^/Taches/InProgress/Likes/(?P<id>[^/]++)$#sD', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'AllInProgressByLikesTaches')), array (  '_controller' => 'App\\Controller\\TachesController::showAllInProgressByLikesTaches',));
+                    }
+
                 }
 
             }
@@ -172,9 +180,17 @@ class srcDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         elseif (0 === strpos($pathinfo, '/Goal')) {
-            // AllGoals
-            if ('/Goals' === $pathinfo) {
-                return array (  '_controller' => 'App\\Controller\\GoalsController::showAllGoals',  '_route' => 'AllGoals',);
+            if (0 === strpos($pathinfo, '/Goals')) {
+                // AllGoals
+                if ('/Goals' === $pathinfo) {
+                    return array (  '_controller' => 'App\\Controller\\GoalsController::showAllGoals',  '_route' => 'AllGoals',);
+                }
+
+                // AllGoalsTitles
+                if ('/GoalsTitles' === $pathinfo) {
+                    return array (  '_controller' => 'App\\Controller\\GoalsController::showAllGoalsTitles',  '_route' => 'AllGoalsTitles',);
+                }
+
             }
 
             // AllGoal

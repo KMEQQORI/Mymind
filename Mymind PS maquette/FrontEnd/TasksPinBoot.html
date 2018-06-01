@@ -1,0 +1,170 @@
+{{#result}}
+         <div class="inProgressHeader">
+           <div class="row">
+             <div class="col-12">
+               <h1 class="InProgresseHeaderTitle">In Progress:</h1>
+             </div>
+           </div>
+        </div>
+
+             {{#message}}
+            <div class="alert alert-danger" role="alert" id="creationSuccessAlert">
+                {{message}}
+            </div>
+            {{/message}}
+
+
+
+            <section id="pinBoot" class="timeline pinboot">
+                {{#inProgress}}
+              <article class="white-panel"  style="background-color:transparent" id="{{id}}" ondblclick="WipToggle({{}})">
+                <div class="percentage{{persTache}} WIP{{Wip}}" ondblclick="WipToggle({{id}});">
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 onclick="toggleparametres({{id}});"><i class="TaskScore{{persTache}} float-right" >{{valueTache}}</i>
+                                {{titreTache}}  </h1>
+
+                        </div>
+                    </div>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <pre>{{descTache}}</pre>
+                    </div>
+                  </div>
+
+                    <div class="row">
+                        <div class="col-md-12" style="text-align :right;text-size:16px;">
+                            <i class="material-icons"  style="color:#2ecc71" id="unchecked{{persTache}}" onclick="loadDoneGoalTaskModal({{id}},'{{valueTache}}');" >done</i>
+                            <i class="material-icons"  style="color:#95a5a6" id="checked{{persTache}}" onclick="loadUnDoneGoalTaskModal({{id}},'{{valueTache}}');">check_box_outline_blank</i>
+                            <i class="material-icons manageIcons"  style="color:#d35400"   onclick="WipToggle({{id}});">hourglass_empty</i>
+                            <i class="material-icons manageIcons"   style="color:#2ecc71"  onclick="confGoalTask({{id}})">favorite_border</i>
+                            {{Conf}}
+                            <i class="material-icons  manageIcons"  style="color:#2ecc71"  onclick="duplicateGoalTask({{id}});">build</i>
+                            <i class="material-icons  manageIcons"  style="color:#007bff" onclick="duplicateGoalTask({{id}});">view_agenda</i>
+                            <i class="material-icons  manageIcons"  style="color:#ffc107" onclick="loadCancelModal({{id}},'{{valueTache}}')">cancel</i>
+                            <i class="material-icons manageIcons"   style="color:#dc3545" onclick="loadSuppresionModal({{id}},'{{valueTache}}')">delete</i>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <input type="text" class="form-control commentInput form-control-sm" placeholder="Add A comment ... " id="{{id}}input">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary btn-sm" type="button" onclick="commentTask({{id}})" ><i class="material-icons" style="font-size: 12px;">comment</i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="comments{{persTache}}">
+                        <div class="col-md-12">
+                            <ul class="list-group list-group-flush ">
+                                {{#comments}}
+                                <li class="list-group-item comments">
+                                    <span class="commentDate">{{creationDateComment}}</span>
+                                    <span class="commentBody">{{commentText}}<span>
+                                </li>
+                                {{/comments}}
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+              </article>
+                {{/inProgress}}
+
+            </section>
+
+
+            <br>
+        </div>
+
+
+<div class="inProgressHeader">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="InProgresseHeaderTitle">To Do (Most Confirmed Tasks):</h1>
+        </div>
+    </div>
+</div>
+
+<section id="pinBoot" class="timeline pinboot">
+    {{#toDo}}
+    <article class="white-panel"  style="background-color:transparent" id="{{id}}" ondblclick="WipToggle({{}})">
+        <div class="percentage{{persTache}} WIP{{Wip}}" ondblclick="WipToggle({{id}});">
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 onclick="toggleparametres({{id}});"><i class="TaskScore{{persTache}} float-right" >{{valueTache}}</i>
+                        {{titreTache}}  </h1>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <pre>{{descTache}}</pre>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12" style="text-align :right;text-size:16px;">
+                    <i class="material-icons"  style="color:#2ecc71" id="unchecked{{persTache}}" onclick="loadDoneGoalTaskModal({{id}},'{{valueTache}}');" >done</i>
+                    <i class="material-icons"  style="color:#95a5a6" id="checked{{persTache}}" onclick="loadUnDoneGoalTaskModal({{id}},'{{valueTache}}');">check_box_outline_blank</i>
+                    <i class="material-icons manageIcons"  style="color:#d35400"   onclick="WipToggle({{id}});">hourglass_empty</i>
+                    <i class="material-icons manageIcons"   style="color:#2ecc71"  onclick="confGoalTask({{id}})">favorite_border</i>
+                    {{Conf}}
+                    <i class="material-icons  manageIcons"  style="color:#2ecc71"  onclick="duplicateGoalTask({{id}});">build</i>
+                    <i class="material-icons  manageIcons"  style="color:#007bff" onclick="duplicateGoalTask({{id}});">view_agenda</i>
+                    <i class="material-icons  manageIcons"  style="color:#ffc107" onclick="loadCancelModal({{id}},'{{valueTache}}')">cancel</i>
+                    <i class="material-icons manageIcons"   style="color:#dc3545" onclick="loadSuppresionModal({{id}},'{{valueTache}}')">delete</i>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control commentInput form-control-sm" placeholder="Add A comment ... " id="{{id}}input">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary btn-sm" type="button" onclick="commentTask({{id}})" ><i class="material-icons" style="font-size: 12px;">comment</i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="comments{{persTache}}">
+                <div class="col-md-12">
+                    <ul class="list-group list-group-flush ">
+                        {{#comments}}
+                        <li class="list-group-item comments">
+                            <span class="commentDate">{{creationDateComment}}</span>
+                                    <span class="commentBody">{{commentText}}<span>
+                        </li>
+                        {{/comments}}
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </article>
+    {{/toDo}}
+
+</section>
+
+
+<br>
+</div>
+
+
+
+
+
+
+{{/result}}
