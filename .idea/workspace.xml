@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f281df09-d758-4dd1-8bbd-627c5ea7ab74" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/GoalsCards.html" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/GoalsCards.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/MGoalsCards.html" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/MGoalsCards.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Mymind.iws" />
@@ -44,20 +40,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="goals.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="goals.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32142857" vertical-offset="1420" max-vertical-offset="5746">
-              <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.33274648" vertical-offset="440" max-vertical-offset="5865">
+              <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="goals.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="goals.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15498155" vertical-offset="1803" max-vertical-offset="6103">
+            <state vertical-scroll-proportion="-0.9259259" vertical-offset="1803" max-vertical-offset="6103">
               <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
               <folding>
                 <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -224,10 +220,10 @@
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/Tasks.js" />
         <option value="$PROJECT_DIR$/src/Entity/Goal.php" />
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css" />
-        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js" />
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/MGoalsCards.html" />
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/GoalsCards.html" />
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html" />
+        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js" />
       </list>
     </option>
   </component>
@@ -1101,14 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32142857" vertical-offset="1420" max-vertical-offset="5746">
-          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/TasksPinBoot.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="86" max-vertical-offset="2975">
@@ -1162,11 +1150,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15498155" vertical-offset="1803" max-vertical-offset="6103">
+        <state vertical-scroll-proportion="-0.9259259" vertical-offset="1803" max-vertical-offset="6103">
           <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
           <folding>
             <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33274648" vertical-offset="440" max-vertical-offset="5865">
+          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
