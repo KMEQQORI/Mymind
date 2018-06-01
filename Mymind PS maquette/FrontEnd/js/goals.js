@@ -81,7 +81,7 @@ function getGoals()
 
             $('.pinboot').each(function(){
                 $(this).pinterest_grid({
-                    no_columns: 4,
+                    no_columns: 3,
                     padding_x: 5,
                     padding_y: 5,
                     margin_bottom: 50,

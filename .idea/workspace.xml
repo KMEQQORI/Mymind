@@ -2,79 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f281df09-d758-4dd1-8bbd-627c5ea7ab74" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/Tasks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/TasksPinBoot.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/tasks.html" />
-      <change type="DELETED" beforePath="C:\xampp3\htdocs\Mymind\var\cache\dev\ContainerJMp6ZUv.legacy" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/E/P/+g6smU+-E5RxhSRQA1XE" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/E/P/+g6smU+-E5RxhSRQA1XE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/V/E/+mCJvt2li7rwBX3SBuUc" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/V/E/+mCJvt2li7rwBX3SBuUc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/W/Y/-lAI8amwzhJGXFuKuMDc" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/W/Y/-lAI8amwzhJGXFuKuMDc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/B/U/0VDgGxbgDrym85dT-Gj0" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/B/U/0VDgGxbgDrym85dT-Gj0" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/H/0/0ZA+iknIG4lW4fOmHHBY" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/H/0/0ZA+iknIG4lW4fOmHHBY" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/A/0/2aQDlr0rK8r7TUgkNFaS" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/A/0/2aQDlr0rK8r7TUgkNFaS" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/I/+/4QslYXBYCEm1BQC8Cy21" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/I/+/4QslYXBYCEm1BQC8Cy21" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/S/6tE1uoGmQaox-UTnHkek" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/S/6tE1uoGmQaox-UTnHkek" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/B/Q/7IKTig6+FCgVFOvgiD6T" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/B/Q/7IKTig6+FCgVFOvgiD6T" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/N/4/89xqN7F5tAsyxmNuWB6R" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/N/4/89xqN7F5tAsyxmNuWB6R" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/I/0/DV5N+RhjBoHXIBn0qZCj" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/I/0/DV5N+RhjBoHXIBn0qZCj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/C/EmW2pWTXRuX-loRyZyvy" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/C/EmW2pWTXRuX-loRyZyvy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/P/4/Gc7V+Vb3phps8-K65k7s" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/P/4/Gc7V+Vb3phps8-K65k7s" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Goal.php" afterPath="$PROJECT_DIR$/src/Entity/Goal.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/GoalsController.php" afterPath="$PROJECT_DIR$/src/Controller/GoalsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/S/HLOmlUZE7konsl89I5-z" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/S/HLOmlUZE7konsl89I5-z" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/A/Hn2Kkp3As3TK23n5-aUM" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/A/Hn2Kkp3As3TK23n5-aUM" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/E/N/JzDiKlE6-RK-TGW04G6o" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/E/N/JzDiKlE6-RK-TGW04G6o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/2/LYv21gkO06-BmXCTgRh5" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/2/LYv21gkO06-BmXCTgRh5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/W/LvRlMMyGtRKf9ZYSnlPt" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/C/W/LvRlMMyGtRKf9ZYSnlPt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/N/H/MDKd8VmPIb+Ki1yXI9JV" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/N/H/MDKd8VmPIb+Ki1yXI9JV" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/Y/I/Me6jASjQsdUJg6VBFuDB" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/Y/I/Me6jASjQsdUJg6VBFuDB" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/Mgoals.js" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/Mgoals.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Mymind.iml" afterPath="$PROJECT_DIR$/.idea/Mymind.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/0/H/OGipJltbsyMNWuIps1H7" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/0/H/OGipJltbsyMNWuIps1H7" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/R/A/OYwiGdUuo7SvDZ+pfNbE" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/R/A/OYwiGdUuo7SvDZ+pfNbE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/7/R/OZg2CSIJwLuwuDoQ5cYF" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/7/R/OZg2CSIJwLuwuDoQ5cYF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/0/A/PQRgXoFJ3R-ug1O2AgHs" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/0/A/PQRgXoFJ3R-ug1O2AgHs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/M/PaBShDukt02EKxcWzGS5" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/M/PaBShDukt02EKxcWzGS5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/Q/W/PtHlPAS3g02qE1Yh2Iu5" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/Q/W/PtHlPAS3g02qE1Yh2Iu5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/O/K/QlGR7dfDlfdxh71l+j8B" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/O/K/QlGR7dfDlfdxh71l+j8B" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/U/W/T7RaEQWkEURJ8jUwpuqD" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/U/W/T7RaEQWkEURJ8jUwpuqD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/TachesController.php" afterPath="$PROJECT_DIR$/src/Controller/TachesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/+/O/UnUKi-Mn8fAa-Yjt-oxC" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/+/O/UnUKi-Mn8fAa-Yjt-oxC" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/R/V/VoastCfp3bQ38nlgx+fe" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/R/V/VoastCfp3bQ38nlgx+fe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/G/+/Vtg3aNk1LK2d2OFAlFo6" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/G/+/Vtg3aNk1LK2d2OFAlFo6" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/W/M/XBFpy3OdhhropELBxkdU" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/W/M/XBFpy3OdhhropELBxkdU" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/G/I/XE8YkQBTcatyuEMQ2ZS7" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/G/I/XE8YkQBTcatyuEMQ2ZS7" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/F/F/XVmIAhtG8oyS3847qQvs" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/F/F/XVmIAhtG8oyS3847qQvs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/B/A/XkVOa4z0qu1KMRKVaZj1" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/B/A/XkVOa4z0qu1KMRKVaZj1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/5/Z/ZWiwC78wjXuGPnOP1eM6" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/5/Z/ZWiwC78wjXuGPnOP1eM6" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/V/I/ajE-Le+KfDxfDIkWVcrn" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/V/I/ajE-Le+KfDxfDIkWVcrn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/M/T/dzDb+vIDz6iczCaP9c8o" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/M/T/dzDb+vIDz6iczCaP9c8o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/N/3/eCsyU3pLU2U0wKeJLSF3" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/N/3/eCsyU3pLU2U0wKeJLSF3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/U/Z/eEeVdSK0iA1eN2ivtGsC" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/U/Z/eEeVdSK0iA1eN2ivtGsC" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/GoalsCards.html" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/GoalsCards.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/MGoalsCards.html" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/MGoalsCards.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/B/R/hcyGkunPe9SYI37O7nxJ" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/B/R/hcyGkunPe9SYI37O7nxJ" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/Z/R/jNgJiV87KYrGF2zG8c1w" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/Z/R/jNgJiV87KYrGF2zG8c1w" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/I/kgTphHIJGAB76bVB0Dt0" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/I/kgTphHIJGAB76bVB0Dt0" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css" afterPath="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/L/oWGREMZFL17KI8LdMAAf" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/L/oWGREMZFL17KI8LdMAAf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/A/I/omXz0OiAkRRXlUk1sh0r" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/A/I/omXz0OiAkRRXlUk1sh0r" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/Z/J/p7cDR57j9qpliRiFxMOT" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/Z/J/p7cDR57j9qpliRiFxMOT" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/M/M/rTs2dODS0HQz5n5PQMwN" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/M/M/rTs2dODS0HQz5n5PQMwN" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.php.meta" afterPath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.php.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.xml.meta" afterPath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.xml.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainerUrlMatcher.php" afterPath="$PROJECT_DIR$/var/cache/dev/srcDevDebugProjectContainerUrlMatcher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/N/tIqzATx26zyPjNV66dXq" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/N/tIqzATx26zyPjNV66dXq" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/N/u4nXPuO2Yo4aA4wW6nD1" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/D/N/u4nXPuO2Yo4aA4wW6nD1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/S/M/wIIHcO2imvo3oIgsJ7mp" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/S/M/wIIHcO2imvo3oIgsJ7mp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/H/yxyP7pZH3r-ubx-uZzWH" afterPath="$PROJECT_DIR$/var/cache/dev/pools/mNCUMRXz-r/X/H/yxyP7pZH3r-ubx-uZzWH" />
     </list>
     <ignored path="Mymind.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,18 +47,30 @@
       <file leaf-file-name="goals.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="5746">
-              <caret line="38" column="71" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
+            <state vertical-scroll-proportion="0.32142857" vertical-offset="1420" max-vertical-offset="5746">
+              <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="goals.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="goals.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3333333" vertical-offset="1197" max-vertical-offset="5508">
-              <caret line="81" column="26" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.15498155" vertical-offset="1803" max-vertical-offset="6103">
+              <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="light.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.32142857" vertical-offset="5738" max-vertical-offset="11815">
+              <caret line="337" column="19" selection-start-line="337" selection-start-column="19" selection-end-line="337" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -134,7 +79,7 @@
       <file leaf-file-name="tasks.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/tasks.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-29.115385" vertical-offset="4479" max-vertical-offset="5508">
+            <state vertical-scroll-proportion="0.30769232" vertical-offset="5244" max-vertical-offset="5508">
               <caret line="308" column="46" selection-start-line="308" selection-start-column="46" selection-end-line="308" selection-end-column="46" />
               <folding />
             </state>
@@ -144,8 +89,8 @@
       <file leaf-file-name="TasksPinBoot.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/TasksPinBoot.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.6666665" vertical-offset="0" max-vertical-offset="2975">
-              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.33333334" vertical-offset="86" max-vertical-offset="2975">
+              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="67" />
               <folding>
                 <element signature="n#style#0;n#article#0;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
@@ -174,21 +119,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tasks.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/Tasks.js">
+      <file leaf-file-name="MGoalsCards.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/MGoalsCards.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="639" max-vertical-offset="5746">
-              <caret line="62" column="52" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
-              <folding />
+            <state vertical-scroll-proportion="1.9615384" vertical-offset="1377" max-vertical-offset="2346">
+              <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="992" />
+              <folding>
+                <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TachesController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/TachesController.php">
+      <file leaf-file-name="Tasks.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/Tasks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.203704" vertical-offset="2297" max-vertical-offset="11458">
-              <caret line="172" column="67" selection-start-line="172" selection-start-column="67" selection-end-line="172" selection-end-column="67" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="5746">
+              <caret line="62" column="52" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -197,28 +144,18 @@
       <file leaf-file-name="Tache.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Tache.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="45.115383" vertical-offset="3434" max-vertical-offset="4454">
+            <state vertical-scroll-proportion="0.30769232" vertical-offset="2269" max-vertical-offset="4454">
               <caret line="134" column="7" selection-start-line="134" selection-start-column="7" selection-end-line="134" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Goal.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Goal.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Goal.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44058502" vertical-offset="2496" max-vertical-offset="3196">
+            <state vertical-scroll-proportion="0.30769232" vertical-offset="2745" max-vertical-offset="3196">
               <caret line="163" column="34" selection-start-line="163" selection-start-column="34" selection-end-line="163" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoalsController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/GoalsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3333333" vertical-offset="2319" max-vertical-offset="4233">
-              <caret line="157" column="25" selection-start-line="157" selection-start-column="21" selection-end-line="157" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -280,15 +217,17 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/Mgoals.js" />
-        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html" />
-        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js" />
         <option value="$PROJECT_DIR$/src/Controller/GoalsController.php" />
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/tasks.html" />
-        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css" />
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/TasksPinBoot.html" />
         <option value="$PROJECT_DIR$/src/Controller/TachesController.php" />
         <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/Tasks.js" />
         <option value="$PROJECT_DIR$/src/Entity/Goal.php" />
+        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css" />
+        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js" />
+        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/MGoalsCards.html" />
+        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/GoalsCards.html" />
+        <option value="$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html" />
       </list>
     </option>
   </component>
@@ -614,6 +553,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../React" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="editor" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -773,6 +715,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -783,7 +726,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1041,14 +983,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/MGoalsCards.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="2244">
-          <caret line="73" column="76" selection-start-line="73" selection-start-column="76" selection-end-line="73" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/sw.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="680">
@@ -1087,58 +1021,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/GoalsCards.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="644" max-vertical-offset="2091">
-          <caret line="48" column="55" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.1111112" vertical-offset="274" max-vertical-offset="3587">
           <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="28" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.018868" vertical-offset="5497" max-vertical-offset="11815">
-          <caret line="339" column="13" selection-start-line="339" selection-start-column="13" selection-end-line="339" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/TasksPinBoot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6666665" vertical-offset="0" max-vertical-offset="2975">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#1;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#2;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#3;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#4;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#5;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#6;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#7;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#article#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#1;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#2;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#3;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#4;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#5;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#6;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#7;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1166,33 +1053,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3333333" vertical-offset="1197" max-vertical-offset="5508">
-          <caret line="81" column="26" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="5746">
-          <caret line="38" column="71" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/tasks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.115385" vertical-offset="4479" max-vertical-offset="5508">
-          <caret line="308" column="46" selection-start-line="308" selection-start-column="46" selection-end-line="308" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/TachesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.203704" vertical-offset="2297" max-vertical-offset="11458">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="2704" max-vertical-offset="11458">
           <caret line="172" column="67" selection-start-line="172" selection-start-column="67" selection-end-line="172" selection-end-column="67" />
           <folding />
         </state>
@@ -1208,7 +1071,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Tache.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="45.115383" vertical-offset="3434" max-vertical-offset="4454">
+        <state vertical-scroll-proportion="0.30769232" vertical-offset="2269" max-vertical-offset="4454">
           <caret line="134" column="7" selection-start-line="134" selection-start-column="7" selection-end-line="134" selection-end-column="7" />
           <folding />
         </state>
@@ -1216,9 +1079,94 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Goal.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44058502" vertical-offset="2496" max-vertical-offset="3196">
+        <state vertical-scroll-proportion="0.30769232" vertical-offset="2745" max-vertical-offset="3196">
           <caret line="163" column="34" selection-start-line="163" selection-start-column="34" selection-end-line="163" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/css/light.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32142857" vertical-offset="5738" max-vertical-offset="11815">
+          <caret line="337" column="19" selection-start-line="337" selection-start-column="19" selection-end-line="337" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/tasks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30769232" vertical-offset="5244" max-vertical-offset="5508">
+          <caret line="308" column="46" selection-start-line="308" selection-start-column="46" selection-end-line="308" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/js/goals.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32142857" vertical-offset="1420" max-vertical-offset="5746">
+          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/TasksPinBoot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="86" max-vertical-offset="2975">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#article#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#1;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#2;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#3;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#4;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#5;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#6;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#7;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#article#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#1;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#2;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#3;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#4;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#5;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#6;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#7;n#div#0;n#div#2;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#article#0;n#section#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/GoalsCards.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.92687386" vertical-offset="1272" max-vertical-offset="2176">
+          <caret line="39" column="171" selection-start-line="39" selection-start-column="171" selection-end-line="39" selection-end-column="171" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#2;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/MGoalsCards.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9615384" vertical-offset="1377" max-vertical-offset="2346">
+          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="992" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#article#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mymind PS maquette/FrontEnd/goals.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15498155" vertical-offset="1803" max-vertical-offset="6103">
+          <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

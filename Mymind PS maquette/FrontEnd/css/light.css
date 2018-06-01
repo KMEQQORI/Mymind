@@ -335,7 +335,7 @@ h1.DoneHeaderCount
 .inProgressHeader
 {
     background-color: rgba(255, 255, 255, 0.96);
-    border-radius:5px;
+    border-radius:1px;
     border:solid 1px  #09264a;
     width:100%;
     margin:  10px auto;
