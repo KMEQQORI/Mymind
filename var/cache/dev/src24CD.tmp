@@ -282,12 +282,6 @@
     <service id="App\Controller\GoalsController" class="App\Controller\GoalsController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
     </service>
-    <service id="App\Controller\NotesController" class="App\Controller\NotesController" public="true" autowire="true" autoconfigure="true">
-      <tag name="controller.service_arguments"/>
-    </service>
-    <service id="App\Controller\ObservationsController" class="App\Controller\ObservationsController" public="true" autowire="true" autoconfigure="true">
-      <tag name="controller.service_arguments"/>
-    </service>
     <service id="App\Controller\TachesController" class="App\Controller\TachesController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
     </service>
@@ -2554,10 +2548,6 @@
     <service id="abstract.instanceof.App\Controller\CommentsController" class="App\Controller\CommentsController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\GoalsController" class="App\Controller\GoalsController" public="false" autowire="true" abstract="true"/>
     <service id="abstract.instanceof.App\Controller\GoalsController" class="App\Controller\GoalsController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\NotesController" class="App\Controller\NotesController" public="false" autowire="true" abstract="true"/>
-    <service id="abstract.instanceof.App\Controller\NotesController" class="App\Controller\NotesController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\ObservationsController" class="App\Controller\ObservationsController" public="false" autowire="true" abstract="true"/>
-    <service id="abstract.instanceof.App\Controller\ObservationsController" class="App\Controller\ObservationsController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\TachesController" class="App\Controller\TachesController" public="false" autowire="true" abstract="true"/>
     <service id="abstract.instanceof.App\Controller\TachesController" class="App\Controller\TachesController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id="instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\CategorieRepository" class="App\Repository\CategorieRepository" public="false" autowire="true" abstract="true"/>

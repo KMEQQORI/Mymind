@@ -48,6 +48,12 @@ $b->setRepositoryFactory(new \Doctrine\Bundle\DoctrineBundle\Repository\Containe
     return ($this->privates['App\Repository\CommentRepository'] ?? $this->load('getCommentRepositoryService.php'));
 }, 'App\\Repository\\GoalRepository' => function () {
     return ($this->privates['App\Repository\GoalRepository'] ?? $this->load('getGoalRepositoryService.php'));
+}, 'App\\Repository\\NoteRepository' => function () {
+    return ($this->privates['App\Repository\NoteRepository'] ?? $this->load('getNoteRepositoryService.php'));
+}, 'App\\Repository\\NotesPageRepository' => function () {
+    return ($this->privates['App\Repository\NotesPageRepository'] ?? $this->load('getNotesPageRepositoryService.php'));
+}, 'App\\Repository\\ObservationRepository' => function () {
+    return ($this->privates['App\Repository\ObservationRepository'] ?? $this->load('getObservationRepositoryService.php'));
 }, 'App\\Repository\\TacheRepository' => function () {
     return ($this->privates['App\Repository\TacheRepository'] ?? $this->load('getTacheRepositoryService.php'));
 }))));
